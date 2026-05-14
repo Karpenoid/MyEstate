@@ -1,4 +1,18 @@
 export interface EstateProperties {
+  id: string;
+  photo: string;
+  street: string;
+  city: string;
+  state: string;
+  homeStatus: string;
+  beds: number;
+  baths: number;
+  area: number;
+  price: string;
+}
+
+export interface DetailedEstateProperties {
+  id: string;
   photo: string;
   street: string;
   city: string;
@@ -18,5 +32,6 @@ export interface EstateProperties {
   };
   zipcode: string;
   daysOnZillow: number;
-  zestimate: number;
+  zestimate?: number;
+  detailUrl: string;
 }
