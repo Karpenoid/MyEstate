@@ -3,7 +3,7 @@ import { ScrollArea } from "@/shared/ui/scroll-area";
 
 export const EstateList = () => {
   return (
-    <ScrollArea className="mx-auto h-[255px] w-full rounded-[24px] border border-slate-200/60 bg-white/40 shadow-sm backdrop-blur-md md:h-[525px] dark:border-slate-800/50 dark:bg-slate-900/40">
+    <ScrollArea className="border-border/50 bg-background/40 mx-auto h-[365px] w-full rounded-[24px] border shadow-sm backdrop-blur-md md:h-[525px]">
       <div className="flex flex-col gap-4 p-2">
         <EstateBox
           id=""
