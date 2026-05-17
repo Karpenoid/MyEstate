@@ -1,4 +1,4 @@
-export interface EstateProperties {
+export interface EstateProps {
   id: string;
   photo: string;
   street: string;
@@ -9,6 +9,21 @@ export interface EstateProperties {
   baths: number;
   area: number;
   price: string;
+}
+
+export interface ApiEstate {
+  id: string;
+  price: string;
+  beds: number;
+  baths: number;
+  area: number;
+  homeStatus: string;
+  imgSrc: string;
+  address: {
+    street: string;
+    city: string;
+    state: string;
+  };
 }
 
 export interface DetailedEstateProperties {

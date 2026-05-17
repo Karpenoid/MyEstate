@@ -1,0 +1,1395 @@
+{
+  "success": true,
+  "totalCount": 23108,
+  "filteredCount": 41,
+  "currentPage": "2",
+  "regionId": 6181,
+  "results": [
+    {
+      "id": "32044741",
+      "price": "$1,499,000",
+      "unformattedPrice": 1499000,
+      "beds": 7,
+      "baths": 6,
+      "area": 4662,
+      "livingArea": 4662,
+      "homeType": "MULTI_FAMILY",
+      "marketingStatus": "Coming Soon",
+      "homeStatus": "FOR_SALE",
+      "listingSubType": {
+        "is_comingSoon": true
+      },
+      "timeOnZillow": 166144000,
+      "taxAssessedValue": 597000,
+      "lotAreaValue": 3740,
+      "lotAreaUnit": "sqft",
+      "has3DModel": false,
+      "address": {
+        "street": "36-11 Utopia Parkway",
+        "city": "Flushing",
+        "state": "NY",
+        "zipcode": "11358"
+      },
+      "latLong": {
+        "latitude": 40.76278,
+        "longitude": -73.793015
+      },
+      "statusText": "Coming soon",
+      "imgSrc": "https://photos.zillowstatic.com/fp/b171fa4a6d0a17e8617bdb4014e78a87-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/3611-Utopia-Pkwy-Flushing-NY-11358/32044741_zpid/",
+      "daysOnZillow": 1
+    },
+    {
+      "id": "453460049",
+      "price": "$699,000",
+      "unformattedPrice": 699000,
+      "beds": 4,
+      "baths": 1,
+      "area": 1208,
+      "livingArea": 1208,
+      "homeType": "CONDO",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "rentZestimate": 7485,
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 28926723000,
+      "has3DModel": false,
+      "address": {
+        "street": "176 W 81st St APT 3E",
+        "city": "New York",
+        "state": "NY",
+        "zipcode": "10024"
+      },
+      "latLong": {
+        "latitude": 40.784077,
+        "longitude": -73.977036
+      },
+      "statusText": "Active",
+      "imgSrc": "https://photos.zillowstatic.com/fp/4a740d375396a492127dc58773274077-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/176-W-81st-St-APT-3E-New-York-NY-10024/453460049_zpid/",
+      "daysOnZillow": 334
+    },
+    {
+      "id": "143131834",
+      "price": "$65,000,000",
+      "unformattedPrice": 65000000,
+      "beds": 8,
+      "baths": 9,
+      "area": 12000,
+      "livingArea": 12000,
+      "homeType": "SINGLE_FAMILY",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "rentZestimate": 6782,
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 587523000,
+      "taxAssessedValue": 22800000,
+      "has3DModel": false,
+      "address": {
+        "street": "25 Riverside Dr",
+        "city": "New York",
+        "state": "NY",
+        "zipcode": "10023"
+      },
+      "latLong": {
+        "latitude": 40.782234,
+        "longitude": -73.98467
+      },
+      "statusText": "Active",
+      "imgSrc": "https://photos.zillowstatic.com/fp/13b976b833313fc574c6c8af62fe9226-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/25-Riverside-Dr-New-York-NY-10023/143131834_zpid/",
+      "daysOnZillow": 6,
+      "zestimate": 10227900
+    },
+    {
+      "id": "453605143",
+      "price": "$194,603",
+      "unformattedPrice": 194603,
+      "beds": 3,
+      "baths": 1,
+      "area": 626,
+      "livingArea": 626,
+      "homeType": "CONDO",
+      "marketingStatus": "For Sale by Owner",
+      "homeStatus": "FOR_SALE",
+      "rentZestimate": 4310,
+      "listingSubType": {
+        "is_FSBO": true
+      },
+      "timeOnZillow": 1644603000,
+      "has3DModel": false,
+      "address": {
+        "street": "31 W 129th St APT 12A",
+        "city": "New York",
+        "state": "NY",
+        "zipcode": "10027"
+      },
+      "latLong": {
+        "latitude": 40.810787,
+        "longitude": -73.95479
+      },
+      "statusText": "For sale by owner",
+      "imgSrc": "https://photos.zillowstatic.com/fp/06ce7418beb143bbd2e846a58feca56f-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/31-W-129th-St-APT-12A-New-York-NY-10027/453605143_zpid/",
+      "daysOnZillow": 19
+    },
+    {
+      "id": "462371341",
+      "price": "$278,000",
+      "unformattedPrice": 278000,
+      "beds": 2,
+      "baths": 1,
+      "area": 7200,
+      "livingArea": 7200,
+      "homeType": "APARTMENT",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 482785000,
+      "lotAreaValue": 0.27999999999999997,
+      "lotAreaUnit": "acres",
+      "has3DModel": false,
+      "address": {
+        "street": "175 3rd St",
+        "city": "Staten Island",
+        "state": "NY",
+        "zipcode": "10306"
+      },
+      "latLong": {
+        "latitude": 40.57352,
+        "longitude": -74.12008
+      },
+      "statusText": "Apartment for sale",
+      "imgSrc": "https://photos.zillowstatic.com/fp/a455a5d4e2bdef0a09371eb7aa43a9b3-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/175-3rd-St-Staten-Island-NY-10306/462371341_zpid/",
+      "daysOnZillow": 5
+    },
+    {
+      "id": "79488505",
+      "price": "$1,185,000",
+      "unformattedPrice": 1185000,
+      "beds": 2,
+      "baths": 2,
+      "area": 0,
+      "livingArea": 0,
+      "homeType": "CONDO",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "rentZestimate": 6571,
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 501123000,
+      "has3DModel": false,
+      "address": {
+        "street": "31 Pierrepont St APT 3B",
+        "city": "Brooklyn",
+        "state": "NY",
+        "zipcode": "11201"
+      },
+      "latLong": {
+        "latitude": 40.696262,
+        "longitude": -73.9961
+      },
+      "statusText": "Active",
+      "imgSrc": "https://photos.zillowstatic.com/fp/b207c1b1ba7b6c0b3997787d95c6e18f-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/31-Pierrepont-St-APT-3B-Brooklyn-NY-11201/79488505_zpid/",
+      "daysOnZillow": 5,
+      "zestimate": 1254200
+    },
+    {
+      "id": "32358578",
+      "price": "$749,999",
+      "unformattedPrice": 749999,
+      "beds": 3,
+      "baths": 3,
+      "area": 1440,
+      "livingArea": 1440,
+      "homeType": "MULTI_FAMILY",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "rentZestimate": 3190,
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 530197000,
+      "taxAssessedValue": 663000,
+      "lotAreaValue": 2613.6,
+      "lotAreaUnit": "sqft",
+      "has3DModel": false,
+      "address": {
+        "street": "72 Gold Ave",
+        "city": "Staten Island",
+        "state": "NY",
+        "zipcode": "10312"
+      },
+      "latLong": {
+        "latitude": 40.558937,
+        "longitude": -74.17945
+      },
+      "statusText": "Multi-family home for sale",
+      "imgSrc": "https://photos.zillowstatic.com/fp/2447bba760a285cb65bc3b6ea4737098-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/72-Gold-Ave-Staten-Island-NY-10312/32358578_zpid/",
+      "daysOnZillow": 6,
+      "zestimate": 743100
+    },
+    {
+      "id": "29793007",
+      "price": "$468,000",
+      "unformattedPrice": 468000,
+      "beds": 3,
+      "baths": 1,
+      "area": 1104,
+      "livingArea": 1104,
+      "homeType": "SINGLE_FAMILY",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 674032000,
+      "taxAssessedValue": 498000,
+      "lotAreaValue": 3258,
+      "lotAreaUnit": "sqft",
+      "has3DModel": false,
+      "address": {
+        "street": "2265 Seward Avenue",
+        "city": "Bronx",
+        "state": "NY",
+        "zipcode": "10473"
+      },
+      "latLong": {
+        "latitude": 40.82166,
+        "longitude": -73.84604
+      },
+      "statusText": "House for sale",
+      "imgSrc": "https://photos.zillowstatic.com/fp/4633db108a991a3619246a2e7373ac62-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/2265-Seward-Ave-Bronx-NY-10473/29793007_zpid/",
+      "daysOnZillow": 7
+    },
+    {
+      "id": "454950512",
+      "price": "$1,750,000",
+      "unformattedPrice": 1750000,
+      "beds": 7,
+      "baths": 7,
+      "area": 5800,
+      "livingArea": 5800,
+      "homeType": "TOWNHOUSE",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "rentZestimate": 6345,
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 1710723000,
+      "has3DModel": false,
+      "address": {
+        "street": "126 W 121st St",
+        "city": "New York",
+        "state": "NY",
+        "zipcode": "10027"
+      },
+      "latLong": {
+        "latitude": 40.805534,
+        "longitude": -73.94871
+      },
+      "statusText": "Active",
+      "imgSrc": "https://photos.zillowstatic.com/fp/627cdc72c62473f856ead4dd7ec42e85-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/126-W-121st-St-New-York-NY-10027/454950512_zpid/",
+      "daysOnZillow": 19,
+      "zestimate": 1736500
+    },
+    {
+      "id": "29815840",
+      "price": "$995,000",
+      "unformattedPrice": 995000,
+      "beds": 5,
+      "baths": 3,
+      "area": 3372,
+      "livingArea": 3372,
+      "homeType": "MULTI_FAMILY",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 179941000,
+      "taxAssessedValue": 1100000,
+      "lotAreaValue": 2500,
+      "lotAreaUnit": "sqft",
+      "has3DModel": false,
+      "address": {
+        "street": "1752 Mahan Avenue",
+        "city": "Bronx",
+        "state": "NY",
+        "zipcode": "10461"
+      },
+      "latLong": {
+        "latitude": 40.847702,
+        "longitude": -73.829185
+      },
+      "statusText": "Multi-family home for sale",
+      "imgSrc": "https://photos.zillowstatic.com/fp/7d30e1198a454c31cd093ec5c160fe94-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/1752-Mahan-Ave-Bronx-NY-10461/29815840_zpid/",
+      "daysOnZillow": 2
+    },
+    {
+      "id": "32169760",
+      "price": "$600,000",
+      "unformattedPrice": 600000,
+      "beds": 3,
+      "baths": 3,
+      "area": 1183,
+      "livingArea": 1183,
+      "homeType": "MULTI_FAMILY",
+      "marketingStatus": "RecentChange",
+      "homeStatus": "FOR_SALE",
+      "listingSubType": {
+        "is_foreclosure": true
+      },
+      "timeOnZillow": 2862222000,
+      "taxAssessedValue": 738000,
+      "lotAreaValue": 1980,
+      "lotAreaUnit": "sqft",
+      "has3DModel": false,
+      "address": {
+        "street": "9409 Linden Boulevard",
+        "city": "Jamaica",
+        "state": "NY",
+        "zipcode": "11417"
+      },
+      "latLong": {
+        "latitude": 40.673855,
+        "longitude": -73.8424
+      },
+      "statusText": "Foreclosure",
+      "imgSrc": "https://photos.zillowstatic.com/fp/365460e81e91316b5a924a565116ca78-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/94-09-Linden-Blvd-Jamaica-NY-11417/32169760_zpid/",
+      "daysOnZillow": 33
+    },
+    {
+      "id": "32134575",
+      "price": "$799,999",
+      "unformattedPrice": 799999,
+      "beds": 3,
+      "baths": 2,
+      "area": 1288,
+      "livingArea": 1288,
+      "homeType": "SINGLE_FAMILY",
+      "marketingStatus": "Coming Soon",
+      "homeStatus": "FOR_SALE",
+      "listingSubType": {
+        "is_comingSoon": true,
+        "is_openHouse": true
+      },
+      "timeOnZillow": 190125000,
+      "taxAssessedValue": 718000,
+      "lotAreaValue": 2700,
+      "lotAreaUnit": "sqft",
+      "has3DModel": false,
+      "address": {
+        "street": "18250 90th Avenue",
+        "city": "Hollis",
+        "state": "NY",
+        "zipcode": "11423"
+      },
+      "latLong": {
+        "latitude": 40.711105,
+        "longitude": -73.77857
+      },
+      "statusText": "Coming soon",
+      "imgSrc": "https://photos.zillowstatic.com/fp/5123c8fca616443e165d170c61ca3a65-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/18250-90th-Ave-Hollis-NY-11423/32134575_zpid/",
+      "daysOnZillow": 2
+    },
+    {
+      "id": "30700549",
+      "price": "$1,299,000",
+      "unformattedPrice": 1299000,
+      "beds": 3,
+      "baths": 2,
+      "area": 1820,
+      "livingArea": 1820,
+      "homeType": "MULTI_FAMILY",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "rentZestimate": 3608,
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 365771000,
+      "taxAssessedValue": 1066000,
+      "lotAreaValue": 1306.8,
+      "lotAreaUnit": "sqft",
+      "has3DModel": false,
+      "address": {
+        "street": "652 88th St",
+        "city": "Brooklyn",
+        "state": "NY",
+        "zipcode": "11228"
+      },
+      "latLong": {
+        "latitude": 40.61797,
+        "longitude": -74.02297
+      },
+      "statusText": "Multi-family home for sale",
+      "imgSrc": "https://photos.zillowstatic.com/fp/894d3252ca616a84d7055ada5e0c440b-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/652-88th-St-Brooklyn-NY-11228/30700549_zpid/",
+      "daysOnZillow": 4,
+      "zestimate": 1278400
+    },
+    {
+      "id": "68312395",
+      "price": "$479,000",
+      "unformattedPrice": 479000,
+      "beds": 3,
+      "baths": 2,
+      "area": 1521,
+      "livingArea": 1521,
+      "homeType": "CONDO",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "rentZestimate": 2875,
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 501123000,
+      "taxAssessedValue": 329854,
+      "has3DModel": false,
+      "address": {
+        "street": "2012 Jerome Ave APT 1A",
+        "city": "Brooklyn",
+        "state": "NY",
+        "zipcode": "11235"
+      },
+      "latLong": {
+        "latitude": 40.587967,
+        "longitude": -73.94885
+      },
+      "statusText": "Active",
+      "imgSrc": "https://photos.zillowstatic.com/fp/a629947d06235cc2429e45642c96ad0e-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/2012-Jerome-Ave-APT-1A-Brooklyn-NY-11235/68312395_zpid/",
+      "daysOnZillow": 5,
+      "zestimate": 488100
+    },
+    {
+      "id": "460901740",
+      "price": "$37,500,000",
+      "unformattedPrice": 37500000,
+      "beds": 7,
+      "baths": 11,
+      "area": 7206,
+      "livingArea": 7206,
+      "homeType": "CONDO",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 6030723000,
+      "has3DModel": false,
+      "address": {
+        "street": "255 E 77th St #Penthouse",
+        "city": "New York",
+        "state": "NY",
+        "zipcode": "10075"
+      },
+      "latLong": {
+        "latitude": 40.772373,
+        "longitude": -73.95617
+      },
+      "statusText": "Active",
+      "imgSrc": "https://photos.zillowstatic.com/fp/7cd55f64f0cc25fbf4ab52b65b34a2a3-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/255-E-77th-St-PENTHOUSE-New-York-NY-10075/460901740_zpid/",
+      "daysOnZillow": 69
+    },
+    {
+      "id": "458182526",
+      "price": "$299,999",
+      "unformattedPrice": 299999,
+      "beds": 3,
+      "baths": 2,
+      "area": 0,
+      "livingArea": 0,
+      "homeType": "CONDO",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 16076034000,
+      "has3DModel": false,
+      "address": {
+        "street": "155-27 89th Street #27",
+        "city": "Howard Beach",
+        "state": "NY",
+        "zipcode": "11414"
+      },
+      "latLong": {
+        "latitude": 40.665474,
+        "longitude": -73.844894
+      },
+      "statusText": "Condo for sale",
+      "imgSrc": "https://photos.zillowstatic.com/fp/7e706bc6621888975a3314f19e0094d5-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/155-27-89th-St-Howard-Beach-NY-11414/458182526_zpid/",
+      "daysOnZillow": 186
+    },
+    {
+      "id": "462378279",
+      "price": "$999,000",
+      "unformattedPrice": 999000,
+      "beds": 3,
+      "baths": 2,
+      "area": 1512,
+      "livingArea": 1512,
+      "homeType": "SINGLE_FAMILY",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 501123000,
+      "has3DModel": false,
+      "address": {
+        "street": "264 Bay 14 St #1",
+        "city": "Brooklyn",
+        "state": "NY",
+        "zipcode": "11214"
+      },
+      "latLong": {
+        "latitude": 40.60382,
+        "longitude": -74.011566
+      },
+      "statusText": "Active",
+      "imgSrc": "https://photos.zillowstatic.com/fp/38598ee87740a4497e2ed73369bd9e12-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/264-Bay-14-St-1-Brooklyn-NY-11214/462378279_zpid/",
+      "daysOnZillow": 5
+    },
+    {
+      "id": "32354388",
+      "price": "$699,999",
+      "unformattedPrice": 699999,
+      "beds": 3,
+      "baths": 3,
+      "area": 1280,
+      "livingArea": 1280,
+      "homeType": "MULTI_FAMILY",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "rentZestimate": 3501,
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 258383000,
+      "taxAssessedValue": 703000,
+      "lotAreaValue": 2178,
+      "lotAreaUnit": "sqft",
+      "has3DModel": false,
+      "address": {
+        "street": "459 Ridgewood Ave",
+        "city": "Staten Island",
+        "state": "NY",
+        "zipcode": "10312"
+      },
+      "latLong": {
+        "latitude": 40.55908,
+        "longitude": -74.16538
+      },
+      "statusText": "Multi-family home for sale",
+      "imgSrc": "https://photos.zillowstatic.com/fp/50bbc12e585b7b12c740291ff17f99a9-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/459-Ridgewood-Ave-Staten-Island-NY-10312/32354388_zpid/",
+      "daysOnZillow": 2,
+      "zestimate": 713400
+    },
+    {
+      "id": "32058155",
+      "price": "$939,000",
+      "unformattedPrice": 939000,
+      "beds": 5,
+      "baths": 3,
+      "area": 1592,
+      "livingArea": 1592,
+      "homeType": "SINGLE_FAMILY",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 268722000,
+      "taxAssessedValue": 1022000,
+      "lotAreaValue": 4150,
+      "lotAreaUnit": "sqft",
+      "has3DModel": false,
+      "address": {
+        "street": "2630 213th Street",
+        "city": "Bayside",
+        "state": "NY",
+        "zipcode": "11360"
+      },
+      "latLong": {
+        "latitude": 40.777447,
+        "longitude": -73.77658
+      },
+      "statusText": "House for sale",
+      "imgSrc": "https://photos.zillowstatic.com/fp/91d20870dacdc4d4925e24d476f34b06-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/2630-213th-St-Bayside-NY-11360/32058155_zpid/",
+      "daysOnZillow": 3
+    },
+    {
+      "id": "462418177",
+      "price": "$90,000,000",
+      "unformattedPrice": 90000000,
+      "beds": 4,
+      "baths": 6,
+      "area": 8038,
+      "livingArea": 8038,
+      "homeType": "CONDO",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 414723000,
+      "has3DModel": false,
+      "address": {
+        "street": "432 Park Ave APT 64",
+        "city": "New York",
+        "state": "NY",
+        "zipcode": "10022"
+      },
+      "latLong": {
+        "latitude": 40.7615,
+        "longitude": -73.971794
+      },
+      "statusText": "Active",
+      "imgSrc": "https://photos.zillowstatic.com/fp/41e3f15ab9b1487624e09a3e32100203-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/432-Park-Ave-APT-64-New-York-NY-10022/462418177_zpid/",
+      "daysOnZillow": 4
+    },
+    {
+      "id": "244715469",
+      "price": "$266,400",
+      "unformattedPrice": 266400,
+      "beds": 1,
+      "baths": 1,
+      "area": 0,
+      "livingArea": 0,
+      "homeType": "CONDO",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "rentZestimate": 6543,
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 4821123000,
+      "taxAssessedValue": 5781000,
+      "has3DModel": false,
+      "address": {
+        "street": "320 W 47th St APT 4W",
+        "city": "New York",
+        "state": "NY",
+        "zipcode": "10036"
+      },
+      "latLong": {
+        "latitude": 40.760708,
+        "longitude": -73.98876
+      },
+      "statusText": "Active",
+      "imgSrc": "https://photos.zillowstatic.com/fp/bfcc87e01ef30d102d6566cd5530cc4a-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/320-W-47th-St-APT-4W-New-York-NY-10036/244715469_zpid/",
+      "daysOnZillow": 55
+    },
+    {
+      "id": "32093609",
+      "price": "$900,000",
+      "unformattedPrice": 900000,
+      "beds": 2,
+      "baths": 1,
+      "area": 1436,
+      "livingArea": 1436,
+      "homeType": "SINGLE_FAMILY",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 194929000,
+      "taxAssessedValue": 974000,
+      "lotAreaValue": 3344,
+      "lotAreaUnit": "sqft",
+      "has3DModel": false,
+      "address": {
+        "street": "24814 Depew Avenue",
+        "city": "Little Neck",
+        "state": "NY",
+        "zipcode": "11363"
+      },
+      "latLong": {
+        "latitude": 40.7706,
+        "longitude": -73.741135
+      },
+      "statusText": "House for sale",
+      "imgSrc": "https://photos.zillowstatic.com/fp/03193522531e93688fd28504b1070b1a-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/24814-Depew-Ave-Little-Neck-NY-11363/32093609_zpid/",
+      "daysOnZillow": 2
+    },
+    {
+      "id": "244755154",
+      "price": "$950,000",
+      "unformattedPrice": 950000,
+      "beds": 2,
+      "baths": 2,
+      "area": 0,
+      "livingArea": 0,
+      "homeType": "CONDO",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "rentZestimate": 7356,
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 11214723000,
+      "taxAssessedValue": 2056000,
+      "has3DModel": false,
+      "address": {
+        "street": "108 W 69th St APT 9",
+        "city": "New York",
+        "state": "NY",
+        "zipcode": "10023"
+      },
+      "latLong": {
+        "latitude": 40.775475,
+        "longitude": -73.98078
+      },
+      "statusText": "Active",
+      "imgSrc": "https://photos.zillowstatic.com/fp/83d1605c96e5b213a91acc14c0336cc7-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/108-W-69th-St-APT-9-New-York-NY-10023/244755154_zpid/",
+      "daysOnZillow": 129
+    },
+    {
+      "id": "32147181",
+      "price": "$699,999",
+      "unformattedPrice": 699999,
+      "beds": 4,
+      "baths": 2,
+      "area": 1693,
+      "livingArea": 1693,
+      "homeType": "SINGLE_FAMILY",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "rentZestimate": 3965,
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 518039000,
+      "taxAssessedValue": 813000,
+      "lotAreaValue": 4399,
+      "lotAreaUnit": "sqft",
+      "has3DModel": false,
+      "address": {
+        "street": "93-42 212th Street",
+        "city": "Queens Village",
+        "state": "NY",
+        "zipcode": "11428"
+      },
+      "latLong": {
+        "latitude": 40.71761,
+        "longitude": -73.74752
+      },
+      "statusText": "House for sale",
+      "imgSrc": "https://photos.zillowstatic.com/fp/e4b6b206a99e59ea11de93479ac1c409-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/9342-212th-St-Queens-Village-NY-11428/32147181_zpid/",
+      "daysOnZillow": 5,
+      "zestimate": 721700
+    },
+    {
+      "id": "32350551",
+      "price": "$799,999",
+      "unformattedPrice": 799999,
+      "beds": 4,
+      "baths": 2,
+      "area": 1545,
+      "livingArea": 1545,
+      "homeType": "SINGLE_FAMILY",
+      "marketingStatus": "Coming Soon",
+      "homeStatus": "FOR_SALE",
+      "rentZestimate": 3094,
+      "listingSubType": {
+        "is_comingSoon": true
+      },
+      "timeOnZillow": 338670000,
+      "taxAssessedValue": 796000,
+      "lotAreaValue": 3920.4,
+      "lotAreaUnit": "sqft",
+      "has3DModel": false,
+      "address": {
+        "street": "259 Seidman Ave",
+        "city": "Staten Island",
+        "state": "NY",
+        "zipcode": "10312"
+      },
+      "latLong": {
+        "latitude": 40.533962,
+        "longitude": -74.16327
+      },
+      "statusText": "Coming soon",
+      "imgSrc": "https://photos.zillowstatic.com/fp/b73f46b40b7cb7f0e12284ae26b9fd81-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/259-Seidman-Ave-Staten-Island-NY-10312/32350551_zpid/",
+      "daysOnZillow": 3,
+      "zestimate": 839200
+    },
+    {
+      "id": "384189449",
+      "price": "$79,900",
+      "unformattedPrice": 79900,
+      "beds": 1,
+      "baths": 1,
+      "area": 900,
+      "livingArea": 900,
+      "homeType": "CONDO",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 1714730000,
+      "has3DModel": false,
+      "address": {
+        "street": "730 E 232nd Street #3G",
+        "city": "Bronx",
+        "state": "NY",
+        "zipcode": "10466"
+      },
+      "latLong": {
+        "latitude": 40.892254,
+        "longitude": -73.85654
+      },
+      "statusText": "Condo for sale",
+      "imgSrc": "https://photos.zillowstatic.com/fp/39f7cbfe88ca8eccf1abf0a78770f4b9-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/730-E-232nd-St-APT-3G-Bronx-NY-10466/384189449_zpid/",
+      "daysOnZillow": 19
+    },
+    {
+      "id": "32085550",
+      "price": "$998,888",
+      "unformattedPrice": 998888,
+      "beds": 3,
+      "baths": 2,
+      "area": 0,
+      "livingArea": 0,
+      "homeType": "SINGLE_FAMILY",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "rentZestimate": 3770,
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 3525123000,
+      "taxAssessedValue": 949000,
+      "has3DModel": false,
+      "address": {
+        "street": "5835 217th St",
+        "city": "Oakland Gardens",
+        "state": "NY",
+        "zipcode": "11364"
+      },
+      "latLong": {
+        "latitude": 40.749165,
+        "longitude": -73.76117
+      },
+      "statusText": "Active",
+      "imgSrc": "https://photos.zillowstatic.com/fp/6585c599bda37f25a0e47a684366c684-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/5835-217th-St-Oakland-Gardens-NY-11364/32085550_zpid/",
+      "daysOnZillow": 40,
+      "zestimate": 1015700
+    },
+    {
+      "id": "215949135",
+      "price": "$180,000",
+      "unformattedPrice": 180000,
+      "beds": 3,
+      "baths": 1,
+      "area": 1050,
+      "livingArea": 1050,
+      "homeType": "CONDO",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 531821000,
+      "has3DModel": false,
+      "address": {
+        "street": "759 Jennings Street #5C",
+        "city": "Bronx",
+        "state": "NY",
+        "zipcode": "10459"
+      },
+      "latLong": {
+        "latitude": 40.83213,
+        "longitude": -73.89767
+      },
+      "statusText": "Condo for sale",
+      "imgSrc": "https://photos.zillowstatic.com/fp/00b75cd77e01a529b2dd83596909446c-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/759-Jennings-St-APT-5C-Bronx-NY-10459/215949135_zpid/",
+      "daysOnZillow": 6
+    },
+    {
+      "id": "30794369",
+      "price": "$679,000",
+      "unformattedPrice": 679000,
+      "beds": 4,
+      "baths": 2,
+      "area": 1360,
+      "livingArea": 1360,
+      "homeType": "SINGLE_FAMILY",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "rentZestimate": 5029,
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 1710723000,
+      "taxAssessedValue": 634000,
+      "has3DModel": false,
+      "address": {
+        "street": "13 Celeste Ct",
+        "city": "Brooklyn",
+        "state": "NY",
+        "zipcode": "11229"
+      },
+      "latLong": {
+        "latitude": 40.591805,
+        "longitude": -73.92625
+      },
+      "statusText": "Active",
+      "imgSrc": "https://photos.zillowstatic.com/fp/6edfc2a82649448770fff4b4fe1becdf-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/13-Celeste-Ct-Brooklyn-NY-11229/30794369_zpid/",
+      "daysOnZillow": 19,
+      "zestimate": 681000
+    },
+    {
+      "id": "32323597",
+      "price": "$799,000",
+      "unformattedPrice": 799000,
+      "beds": 3,
+      "baths": 2,
+      "area": 1344,
+      "livingArea": 1344,
+      "homeType": "MULTI_FAMILY",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "rentZestimate": 3451,
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 190946000,
+      "taxAssessedValue": 623000,
+      "lotAreaValue": 2178,
+      "lotAreaUnit": "sqft",
+      "has3DModel": false,
+      "address": {
+        "street": "579 Britton Ave",
+        "city": "Staten Island",
+        "state": "NY",
+        "zipcode": "10304"
+      },
+      "latLong": {
+        "latitude": 40.605602,
+        "longitude": -74.089005
+      },
+      "statusText": "Multi-family home for sale",
+      "imgSrc": "https://photos.zillowstatic.com/fp/d1a0c34e3946a4883c12a23361dd0190-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/579-Britton-Ave-Staten-Island-NY-10304/32323597_zpid/",
+      "daysOnZillow": 2,
+      "zestimate": 782000
+    },
+    {
+      "id": "32000344",
+      "price": "$1,450,000",
+      "unformattedPrice": 1450000,
+      "beds": 3,
+      "baths": 3,
+      "area": 1790,
+      "livingArea": 1790,
+      "homeType": "SINGLE_FAMILY",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 325428000,
+      "taxAssessedValue": 954000,
+      "lotAreaValue": 3300,
+      "lotAreaUnit": "sqft",
+      "has3DModel": false,
+      "address": {
+        "street": "6210 Boelsen Crescent",
+        "city": "Rego Park",
+        "state": "NY",
+        "zipcode": "11374"
+      },
+      "latLong": {
+        "latitude": 40.72434,
+        "longitude": -73.861786
+      },
+      "statusText": "House for sale",
+      "imgSrc": "https://photos.zillowstatic.com/fp/b0e29e57ac1a52a321cbd9c541916340-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/6210-Boelsen-Cres-Rego-Park-NY-11374/32000344_zpid/",
+      "daysOnZillow": 3
+    },
+    {
+      "id": "29853179",
+      "price": "$899,000",
+      "unformattedPrice": 899000,
+      "beds": 4,
+      "baths": 4,
+      "area": 2530,
+      "livingArea": 2530,
+      "homeType": "MULTI_FAMILY",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "rentZestimate": 3828,
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 846723000,
+      "taxAssessedValue": 1368000,
+      "has3DModel": false,
+      "address": {
+        "street": "5629 Sylvan Ave",
+        "city": "Bronx",
+        "state": "NY",
+        "zipcode": "10471"
+      },
+      "latLong": {
+        "latitude": 40.90417,
+        "longitude": -73.898636
+      },
+      "statusText": "Active",
+      "imgSrc": "https://photos.zillowstatic.com/fp/b0ea1de45feaaa70de9fb8f4cbc3d3c6-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/5629-Sylvan-Ave-Bronx-NY-10471/29853179_zpid/",
+      "daysOnZillow": 9,
+      "zestimate": 919100
+    },
+    {
+      "id": "32363428",
+      "price": "$679,000",
+      "unformattedPrice": 679000,
+      "beds": 3,
+      "baths": 3,
+      "area": 1319,
+      "livingArea": 1319,
+      "homeType": "TOWNHOUSE",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "rentZestimate": 2923,
+      "listingSubType": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "timeOnZillow": 196473000,
+      "taxAssessedValue": 538000,
+      "lotAreaValue": 1306.8,
+      "lotAreaUnit": "sqft",
+      "has3DModel": false,
+      "address": {
+        "street": "80 Sperry Pl",
+        "city": "Staten Island",
+        "state": "NY",
+        "zipcode": "10312"
+      },
+      "latLong": {
+        "latitude": 40.546055,
+        "longitude": -74.195435
+      },
+      "statusText": "Townhouse for sale",
+      "imgSrc": "https://photos.zillowstatic.com/fp/7adabca1cb902a85b5911a500bca8aaa-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/80-Sperry-Pl-Staten-Island-NY-10312/32363428_zpid/",
+      "daysOnZillow": 2,
+      "zestimate": 679800
+    },
+    {
+      "id": "32026130",
+      "price": "$2,850,000",
+      "unformattedPrice": 2850000,
+      "beds": 6,
+      "baths": 7,
+      "area": 4800,
+      "livingArea": 4800,
+      "homeType": "SINGLE_FAMILY",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "rentZestimate": 6746,
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 17781123000,
+      "taxAssessedValue": 2670000,
+      "has3DModel": true,
+      "address": {
+        "street": "6 Summit Pl",
+        "city": "Malba",
+        "state": "NY",
+        "zipcode": "11357"
+      },
+      "latLong": {
+        "latitude": 40.793495,
+        "longitude": -73.82633
+      },
+      "statusText": "Active",
+      "imgSrc": "https://photos.zillowstatic.com/fp/933f629d4058f239f4b37de141dbd994-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/6-Summit-Pl-Malba-NY-11357/32026130_zpid/",
+      "daysOnZillow": 205,
+      "zestimate": 2761800
+    },
+    {
+      "id": "32073900",
+      "price": "$978,000",
+      "unformattedPrice": 978000,
+      "beds": 3,
+      "baths": 2,
+      "area": 1118,
+      "livingArea": 1118,
+      "homeType": "SINGLE_FAMILY",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "listingSubType": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "timeOnZillow": 268722000,
+      "taxAssessedValue": 977000,
+      "lotAreaValue": 3897,
+      "lotAreaUnit": "sqft",
+      "has3DModel": false,
+      "address": {
+        "street": "64-50 Utopia Parkway",
+        "city": "Fresh Meadows",
+        "state": "NY",
+        "zipcode": "11365"
+      },
+      "latLong": {
+        "latitude": 40.736843,
+        "longitude": -73.79312
+      },
+      "statusText": "House for sale",
+      "imgSrc": "https://photos.zillowstatic.com/fp/bad6676bb2a3801480178ca8055b199f-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/6450-Utopia-Pkwy-Fresh-Meadows-NY-11365/32073900_zpid/",
+      "daysOnZillow": 3
+    },
+    {
+      "id": "32358472",
+      "price": "$728,000",
+      "unformattedPrice": 728000,
+      "beds": 3,
+      "baths": 2,
+      "area": 1300,
+      "livingArea": 1300,
+      "homeType": "MULTI_FAMILY",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "rentZestimate": 2966,
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 342631000,
+      "taxAssessedValue": 626000,
+      "lotAreaValue": 2613.6,
+      "lotAreaUnit": "sqft",
+      "has3DModel": false,
+      "address": {
+        "street": "66 Alexander Ave",
+        "city": "Staten Island",
+        "state": "NY",
+        "zipcode": "10312"
+      },
+      "latLong": {
+        "latitude": 40.55684,
+        "longitude": -74.17946
+      },
+      "statusText": "Multi-family home for sale",
+      "imgSrc": "https://photos.zillowstatic.com/fp/f6d6a8107e769fbb00dfc2bee6db758d-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/66-Alexander-Ave-Staten-Island-NY-10312/32358472_zpid/",
+      "daysOnZillow": 3,
+      "zestimate": 724100
+    },
+    {
+      "id": "443951720",
+      "price": "$82,000",
+      "unformattedPrice": 82000,
+      "beds": 3,
+      "baths": 2,
+      "area": 1058,
+      "livingArea": 1058,
+      "homeType": "MANUFACTURED",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 4142244000,
+      "lotAreaValue": 435.6,
+      "lotAreaUnit": "sqft",
+      "has3DModel": false,
+      "address": {
+        "street": "81 Oak Dr",
+        "city": "Alden",
+        "state": "NY",
+        "zipcode": "14004"
+      },
+      "latLong": {
+        "latitude": 40.727863,
+        "longitude": -73.95803
+      },
+      "statusText": "Home for sale",
+      "imgSrc": "https://photos.zillowstatic.com/fp/d5b0237d0108c7f9cbbda1a709eeb124-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/81-Oak-Dr-Alden-NY-14004/443951720_zpid/",
+      "daysOnZillow": 47
+    },
+    {
+      "id": "458671486",
+      "price": "$85,000,000",
+      "unformattedPrice": 85000000,
+      "beds": 6,
+      "baths": 10,
+      "area": 7700,
+      "livingArea": 7700,
+      "homeType": "CONDO",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 14497923000,
+      "has3DModel": false,
+      "address": {
+        "street": "125 Perry St #Phe",
+        "city": "New York",
+        "state": "NY",
+        "zipcode": "10014"
+      },
+      "latLong": {
+        "latitude": 40.734997,
+        "longitude": -74.007034
+      },
+      "statusText": "Active",
+      "imgSrc": "https://photos.zillowstatic.com/fp/b77702c227be2c48a99ca759b4759e1c-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/125-Perry-St-PHE-New-York-NY-10014/458671486_zpid/",
+      "daysOnZillow": 167
+    },
+    {
+      "id": "32001814",
+      "price": "$1,390,000",
+      "unformattedPrice": 1390000,
+      "beds": 3,
+      "baths": 4,
+      "area": 1680,
+      "livingArea": 1680,
+      "homeType": "SINGLE_FAMILY",
+      "marketingStatus": "Coming Soon",
+      "homeStatus": "FOR_SALE",
+      "listingSubType": {
+        "is_comingSoon": true
+      },
+      "timeOnZillow": 215338000,
+      "taxAssessedValue": 1259000,
+      "lotAreaValue": 2000,
+      "lotAreaUnit": "sqft",
+      "has3DModel": false,
+      "address": {
+        "street": "10018 67th Drive",
+        "city": "Forest Hills",
+        "state": "NY",
+        "zipcode": "11375"
+      },
+      "latLong": {
+        "latitude": 40.724293,
+        "longitude": -73.85281
+      },
+      "statusText": "Coming soon",
+      "imgSrc": "https://photos.zillowstatic.com/fp/da0c9f7c40703ef6ad94c3824abd410b-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/10018-67th-Dr-Forest-Hills-NY-11375/32001814_zpid/",
+      "daysOnZillow": 2
+    },
+    {
+      "id": "32344955",
+      "price": "$769,900",
+      "unformattedPrice": 769900,
+      "beds": 3,
+      "baths": 2,
+      "area": 1232,
+      "livingArea": 1232,
+      "homeType": "MULTI_FAMILY",
+      "marketingStatus": "New Construction",
+      "homeStatus": "FOR_SALE",
+      "rentZestimate": 3310,
+      "listingSubType": {
+        "is_newHome": true
+      },
+      "timeOnZillow": 280822000,
+      "taxAssessedValue": 612000,
+      "lotAreaValue": 2178,
+      "lotAreaUnit": "sqft",
+      "has3DModel": false,
+      "address": {
+        "street": "152 Durant Ave",
+        "city": "Staten Island",
+        "state": "NY",
+        "zipcode": "10306"
+      },
+      "latLong": {
+        "latitude": 40.555347,
+        "longitude": -74.13242
+      },
+      "statusText": "New construction",
+      "imgSrc": "https://photos.zillowstatic.com/fp/785c692f78d44885ea6972c08ea7d90f-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/152-Durant-Ave-Staten-Island-NY-10306/32344955_zpid/",
+      "daysOnZillow": 3,
+      "zestimate": 765300
+    },
+    {
+      "id": "32289832",
+      "price": "$758,000",
+      "unformattedPrice": 758000,
+      "beds": 4,
+      "baths": 2,
+      "area": 1303,
+      "livingArea": 1303,
+      "homeType": "SINGLE_FAMILY",
+      "marketingStatus": "For Sale by Agent",
+      "homeStatus": "FOR_SALE",
+      "rentZestimate": 4186,
+      "listingSubType": {
+        "is_FSBA": true
+      },
+      "timeOnZillow": 867805000,
+      "taxAssessedValue": 740000,
+      "lotAreaValue": 3400,
+      "lotAreaUnit": "sqft",
+      "has3DModel": false,
+      "address": {
+        "street": "147 Byrne Ave",
+        "city": "Staten Island",
+        "state": "NY",
+        "zipcode": "10314"
+      },
+      "latLong": {
+        "latitude": 40.61091,
+        "longitude": -74.133896
+      },
+      "statusText": "House for sale",
+      "imgSrc": "https://photos.zillowstatic.com/fp/0fc226ca4b3834f1aefb31eee9f24e91-p_e.jpg",
+      "detailUrl": "https://www.zillow.com/homedetails/147-Byrne-Ave-Staten-Island-NY-10314/32289832_zpid/",
+      "daysOnZillow": 10,
+      "zestimate": 754100
+    }
+  ]
+}

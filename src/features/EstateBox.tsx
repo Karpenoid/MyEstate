@@ -2,11 +2,11 @@ import { FC } from "react";
 
 import Image from "next/image";
 
-import { EstateProperties } from "@/shared/types/types";
+import { EstateProps } from "@/shared/types/types";
 import { Badge } from "@/shared/ui/badge";
 import { Button } from "@/shared/ui/button";
 
-const EstateBox: FC<EstateProperties> = ({
+const EstateBox: FC<EstateProps> = ({
   id,
   photo,
   homeStatus,
