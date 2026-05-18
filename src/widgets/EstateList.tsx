@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 
+import { fetchEstates } from "@/app/api/getEstates";
 import EstateBox from "@/features/EstateBox";
-import { fetchEstates } from "@/shared/api/getEstates";
 import { ApiEstate } from "@/shared/types/types";
 import { ScrollArea } from "@/shared/ui/scroll-area";
 

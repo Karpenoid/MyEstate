@@ -51,16 +51,16 @@
 
 /* Custom theme variables */
 /* https://tailwindcss.com/docs/adding-custom-styles */
-/*@theme {*/
-/*  --z-index-header: 50;*/
-/*  --height-header: 64px;*/
+@theme {
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
 
-/*  --spacing-container: 1rem; !* 16px *!*/
-/*  --max-width-layouts: 1888px; !** Max-w for header, footer and content *!*/
-/*  --max-width-communityFeed: 720px;*/
+  --color-feature: var(--feature);
+  --color-feature-foreground: var(--feature-foreground);
 
-/*  --breakpoint-2xl: 80rem;*/
-/*}*/
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+}
 
 :root {
   --background: oklch(1 0 0);
@@ -95,6 +95,15 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  /* Added colors */
+  --info: oklch(0.62 0.22 275); /* purple base */
+  --info-foreground: oklch(0.45 0.22 275);
+
+  --feature: oklch(0.6 0.18 240); /* blue */
+  --feature-foreground: oklch(0.48 0.18 240);
+
+  --success: oklch(0.68 0.18 145); /* green */
+  --success-foreground: oklch(0.5 0.18 145);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -130,6 +139,10 @@
     --sidebar-accent-foreground: oklch(0.985 0 0);
     --sidebar-border: oklch(1 0 0 / 10%);
     --sidebar-ring: oklch(0.556 0 0);
+    /* Added new */
+    --info-foreground: oklch(0.78 0.18 275);
+    --feature-foreground: oklch(0.75 0.16 240);
+    --success-foreground: oklch(0.8 0.16 145);
   }
 }
 

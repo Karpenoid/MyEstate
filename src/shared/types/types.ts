@@ -1,14 +1,21 @@
-export interface EstateProps {
-  id: string;
-  photo: string;
+/** General types */
+export interface Address {
   street: string;
   city: string;
   state: string;
-  homeStatus: string;
-  beds: number;
-  baths: number;
-  area: number;
-  price: string;
+}
+
+export interface Coordinates {
+  lat: number;
+  lng: number;
+}
+
+/** ------------- */
+export interface EstateProps extends Omit<ApiEstate, "address" | "imgSrc"> {
+  photo: string;
+  street: Address["street"];
+  city: Address["city"];
+  state: Address["state"];
 }
 
 export interface ApiEstate {
@@ -19,11 +26,12 @@ export interface ApiEstate {
   area: number;
   homeStatus: string;
   imgSrc: string;
-  address: {
-    street: string;
-    city: string;
-    state: string;
-  };
+  address: Address;
+}
+
+export interface Coordinates {
+  lat: number;
+  lng: number;
 }
 
 export interface DetailedEstateProperties {
@@ -41,10 +49,7 @@ export interface DetailedEstateProperties {
   livingArea: number;
   price: string;
   taxAssessedValue: number;
-  coordinates: {
-    lat: number;
-    lng: number;
-  };
+  coordinates: Coordinates;
   zipcode: string;
   daysOnZillow: number;
   zestimate?: number;

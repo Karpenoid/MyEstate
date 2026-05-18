@@ -18,6 +18,27 @@ const EstateBox: FC<EstateProps> = ({
   area,
   price,
 }) => {
+  const info = [
+    {
+      id: "beds",
+      label: "Beds",
+      value: beds,
+      className: "bg-purple-500/10 font-medium text-purple-700 dark:text-purple-400",
+    },
+    {
+      id: "baths",
+      label: "Baths",
+      value: baths,
+      className: "bg-blue-500/10 font-medium text-blue-700 dark:text-blue-400",
+    },
+    {
+      id: "area",
+      label: null,
+      value: `${area} sqft`,
+      className: "bg-green-500/10 font-medium text-green-700 dark:text-green-400",
+    },
+  ];
+
   return (
     <div className="group border-border/60 bg-card text-card-foreground flex w-full flex-col overflow-hidden rounded-[24px] border shadow-sm transition-all duration-300 hover:shadow-md sm:flex-row">
       <div className="relative h-48 w-full shrink-0 overflow-hidden sm:h-auto sm:w-48">
@@ -57,24 +78,11 @@ const EstateBox: FC<EstateProps> = ({
           </div>
 
           <div className="font-inter mt-2 flex flex-wrap gap-2">
-            <Badge
-              variant="secondary"
-              className="bg-purple-500/10 font-medium text-purple-700 dark:text-purple-400"
-            >
-              Beds: {beds}
-            </Badge>
-            <Badge
-              variant="secondary"
-              className="bg-blue-500/10 font-medium text-blue-700 dark:text-blue-400"
-            >
-              Baths: {baths}
-            </Badge>
-            <Badge
-              variant="secondary"
-              className="bg-green-500/10 font-medium text-green-700 dark:text-green-400"
-            >
-              {area} sqft
-            </Badge>
+            {info.map(({ id, label, value, className }) => (
+              <Badge key={id} variant="secondary" className={`font-medium ${className}`}>
+                {label ? `${label}: ${value}` : value}
+              </Badge>
+            ))}
           </div>
         </div>
 
