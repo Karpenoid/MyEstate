@@ -1,43 +1,54 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
-import { fetchEstates } from "@/app/api/getEstates";
+// import { fetchEstates } from "@/app/api/getEstates";
 import EstateBox from "@/features/EstateBox";
-import { ApiEstate } from "@/shared/types/types";
+import { useEstateStore } from "@/shared/store/EstateStore";
+// import { ApiEstate } from "@/shared/types/types";
 import { ScrollArea } from "@/shared/ui/scroll-area";
 
 export const EstateList = () => {
-  const [estates, setEstates] = useState<ApiEstate[]>([]);
-  const [loader, setLoader] = useState(true);
+  // const [estates, setEstates] = useState<ApiEstate[]>([]);
+  // const [loader, setLoader] = useState(true);
+  const { estates, isLoading, fetchEstatesAction, searchQuery } = useEstateStore();
+
+  // useEffect(() => {
+  //   const loadEstates = async () => {
+  //     try {
+  //       const data = await fetchEstates();
+  //       const results = Array.isArray(data) ? data : data?.results || [];
+  //       setEstates(results);
+  //     } catch (error) {
+  //       console.error("Failed to load data:", error);
+  //     } finally {
+  //       setLoader(false);
+  //     }
+  //   };
+  //   loadEstates();
+  // }, []);
 
   useEffect(() => {
-    const loadEstates = async () => {
-      try {
-        const data = await fetchEstates();
-        const results = Array.isArray(data) ? data : data?.results || [];
-        setEstates(results);
-      } catch (error) {
-        console.error("Failed to load data:", error);
-      } finally {
-        setLoader(false);
-      }
-    };
-    loadEstates();
-  }, []);
+    fetchEstatesAction();
+  }, [fetchEstatesAction]);
+
+  const filteredEstates = estates.filter((estate) => {
+    const locationString = `${estate.address.city}, ${estate.address.state}`.toLowerCase();
+    return locationString.includes(searchQuery.toLowerCase());
+  });
 
   return (
     <ScrollArea className="border-border/50 bg-background/40 mx-auto h-[365px] w-full rounded-[24px] border shadow-sm backdrop-blur-md md:h-[525px]">
       <div className="flex flex-col gap-4 p-2">
-        {loader ? (
+        {isLoading ? (
           <div className="text-muted-foreground font-inter flex h-40 items-center justify-center text-sm">
             Loading estates...
           </div>
-        ) : estates.length === 0 ? (
+        ) : filteredEstates.length === 0 ? (
           <div className="text-muted-foreground font-inter flex h-40 items-center justify-center text-sm">
             No estates found.
           </div>
         ) : (
-          estates.map((estate) => (
+          filteredEstates.map((estate) => (
             <EstateBox
               key={estate.id}
               id={estate.id}

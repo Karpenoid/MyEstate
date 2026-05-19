@@ -6,8 +6,8 @@ export interface Address {
 }
 
 export interface Coordinates {
-  lat: number;
-  lng: number;
+  latitude: number;
+  longitude: number;
 }
 
 /** ------------- */
@@ -27,31 +27,34 @@ export interface ApiEstate {
   homeStatus: string;
   imgSrc: string;
   address: Address;
-}
-
-export interface Coordinates {
-  lat: number;
-  lng: number;
-}
-
-export interface DetailedEstateProperties {
-  id: string;
-  photo: string;
-  street: string;
-  city: string;
-  state: string;
-  homeType: string;
-  marketingStatus: string;
-  homeStatus: string;
-  beds: number;
-  baths: number;
-  area: number;
-  livingArea: number;
-  price: string;
-  taxAssessedValue: number;
-  coordinates: Coordinates;
-  zipcode: string;
-  daysOnZillow: number;
+  // Optional data
+  homeType?: string;
+  marketingStatus?: string;
+  livingArea?: number;
+  taxAssessedValue?: number;
+  latLong?: Coordinates;
+  zipcode?: string;
+  daysOnZillow?: number;
   zestimate?: number;
-  detailUrl: string;
+  detailUrl?: string;
 }
+
+// export interface DetailetEstateInfo {
+//   id: string;
+//   price: string;
+//   beds: number;
+//   baths: number;
+//   area: number;
+//   homeStatus: string;
+//   imgSrc: string;
+//   address: Address;
+//   homeType: string;
+//   marketingStatus: string;
+//   livingArea: number;
+//   taxAssessedValue: number;
+//   coordinates: Coordinates;
+//   zipcode: string;
+//   daysOnZillow: number;
+//   zestimate?: number;
+//   detailUrl: string;
+// }
