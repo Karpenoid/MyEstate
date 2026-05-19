@@ -11,7 +11,7 @@ export async function fetchEstates() {
       "x-rapidapi-key": process.env.RAPIDAPI_KEY as string,
       "x-rapidapi-host": process.env.RAPIDAPI_HOST as string,
     },
-    next: { revalidate: 3600 },
+    next: { revalidate: 24000 },
   };
 
   try {

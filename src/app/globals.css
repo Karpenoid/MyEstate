@@ -98,12 +98,15 @@
   /* Added colors */
   --info: oklch(0.62 0.22 275); /* purple base */
   --info-foreground: oklch(0.45 0.22 275);
+  /*--info-foreground: oklch(0.52 0.28 275);*/
 
   --feature: oklch(0.6 0.18 240); /* blue */
-  --feature-foreground: oklch(0.48 0.18 240);
+  /*--feature-foreground: oklch(0.48 0.18 240);*/
+  --feature-foreground: oklch(0.55 0.25 240);
 
   --success: oklch(0.68 0.18 145); /* green */
   --success-foreground: oklch(0.5 0.18 145);
+  /*--success-foreground: oklch(0.55 0.24 145);*/
 }
 
 @media (prefers-color-scheme: dark) {

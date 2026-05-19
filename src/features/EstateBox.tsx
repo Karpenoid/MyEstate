@@ -23,19 +23,19 @@ const EstateBox: FC<EstateProps> = ({
       id: "beds",
       label: "Beds",
       value: beds,
-      className: "bg-purple-500/10 font-medium text-purple-700 dark:text-purple-400",
+      className: "bg-info/10 font-medium text-info-foreground",
     },
     {
       id: "baths",
       label: "Baths",
       value: baths,
-      className: "bg-blue-500/10 font-medium text-blue-700 dark:text-blue-400",
+      className: "bg-feature/10 font-medium text-feature-foreground",
     },
     {
       id: "area",
       label: null,
       value: `${area} sqft`,
-      className: "bg-green-500/10 font-medium text-green-700 dark:text-green-400",
+      className: "bg-success/10 font-medium text-success-foreground",
     },
   ];
 
@@ -89,7 +89,7 @@ const EstateBox: FC<EstateProps> = ({
         <div className="border-border/50 mt-2 flex items-center justify-end border-t pt-1">
           <Button
             variant="ghost"
-            className="font-inter text-blue-600 hover:bg-blue-50 hover:text-blue-700"
+            className="font-inter text-feature-foreground hover:bg-feature/10 hover:text-feature-foreground"
           >
             More info
           </Button>
