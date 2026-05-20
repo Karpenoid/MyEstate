@@ -37,13 +37,3 @@ export const useEstateStore = create<EstateStore>((set, get) => ({
     }
   },
 }));
-
-// interface EstateStore {
-//   estates: ApiEstate[];
-//   setEstates: (estates: ApiEstate[]) => void;
-// }
-//
-// export const useEstateStore = create<EstateStore>((set) => ({
-//   estates: [],
-//   setEstates: (estates) => set({ estates }),
-// }));

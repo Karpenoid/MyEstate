@@ -16,6 +16,7 @@ export async function fetchEstates() {
 
   try {
     const response = await fetch(url, options);
+    console.log(response, "options", options);
     if (!response.ok) {
       console.warn(`Api error ${response.status}. Using local mock json file.`);
       return mockData;

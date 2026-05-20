@@ -1,35 +1,16 @@
 "use client";
 import { useEffect } from "react";
 
-// import { fetchEstates } from "@/app/api/getEstates";
 import EstateBox from "@/features/EstateBox";
 import { useEstateStore } from "@/shared/store/EstateStore";
-// import { ApiEstate } from "@/shared/types/types";
 import { ScrollArea } from "@/shared/ui/scroll-area";
 
 export const EstateList = () => {
-  // const [estates, setEstates] = useState<ApiEstate[]>([]);
-  // const [loader, setLoader] = useState(true);
   const { estates, isLoading, fetchEstatesAction, searchQuery } = useEstateStore();
-
-  // useEffect(() => {
-  //   const loadEstates = async () => {
-  //     try {
-  //       const data = await fetchEstates();
-  //       const results = Array.isArray(data) ? data : data?.results || [];
-  //       setEstates(results);
-  //     } catch (error) {
-  //       console.error("Failed to load data:", error);
-  //     } finally {
-  //       setLoader(false);
-  //     }
-  //   };
-  //   loadEstates();
-  // }, []);
 
   useEffect(() => {
     fetchEstatesAction();
-  }, [fetchEstatesAction]);
+  }, []);
 
   const filteredEstates = estates.filter((estate) => {
     const locationString = `${estate.address.city}, ${estate.address.state}`.toLowerCase();
