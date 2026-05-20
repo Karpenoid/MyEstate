@@ -2,6 +2,7 @@ import { FC } from "react";
 
 import Image from "next/image";
 
+import { useEstateStore } from "@/shared/store/EstateStore";
 import { EstateProps } from "@/shared/types/types";
 import { Badge } from "@/shared/ui/badge";
 import { Button } from "@/shared/ui/button";
@@ -39,6 +40,8 @@ const EstateBox: FC<EstateProps> = ({
     },
   ];
 
+  const { setSelectedEstateId } = useEstateStore();
+
   return (
     <div className="group border-border/60 bg-card text-card-foreground flex w-full flex-col overflow-hidden rounded-[24px] border shadow-sm transition-all duration-300 hover:shadow-md sm:flex-row">
       <div className="relative h-48 w-full shrink-0 overflow-hidden sm:h-auto sm:w-48">
@@ -56,7 +59,7 @@ const EstateBox: FC<EstateProps> = ({
             variant="outline"
             className="font-inter bg-background/40 text-foreground border border-white/30 font-semibold shadow-[0_4px_12px_rgba(0,0,0,0.05)] backdrop-blur-md backdrop-saturate-150"
           >
-            {id} {homeStatus}
+            {homeStatus}
           </Badge>
         </div>
       </div>
@@ -89,6 +92,7 @@ const EstateBox: FC<EstateProps> = ({
         <div className="border-border/50 mt-2 flex items-center justify-end border-t pt-1">
           <Button
             variant="ghost"
+            onClick={() => setSelectedEstateId(id)}
             className="font-inter text-feature-foreground hover:bg-feature/10 hover:text-feature-foreground"
           >
             More info

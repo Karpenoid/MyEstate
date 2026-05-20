@@ -1,3 +1,4 @@
+import { EstateInfo } from "@/features/EstateInfo";
 import { EstateList } from "@/widgets/EstateList";
 import { EstateMap } from "@/widgets/EstateMap";
 import { FloatingHeader } from "@/widgets/FloatingHeader";
@@ -7,13 +8,16 @@ export default function Home() {
     <div className="bg-background min-h-screen py-3 transition-colors duration-500 md:py-4">
       <div className="mx-auto w-full max-w-full px-4 md:px-6">
         <FloatingHeader />
-        <main className="mt-4 flex w-full flex-col items-start gap-4 lg:flex-row">
-          <div className="w-full flex-1 lg:top-24">
-            <EstateMap />
+        <main className="">
+          <div className="mt-4 flex w-full flex-col items-start gap-4 lg:flex-row">
+            <div className="w-full flex-1 lg:top-24">
+              <EstateMap />
+            </div>
+            <div className="w-full shrink-0 lg:w-105 xl:w-[610px]">
+              <EstateList />
+            </div>
           </div>
-          <div className="w-full shrink-0 lg:w-105 xl:w-[610px]">
-            <EstateList />
-          </div>
+          <EstateInfo />
         </main>
       </div>
     </div>

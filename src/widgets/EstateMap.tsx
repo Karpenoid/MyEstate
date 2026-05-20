@@ -12,14 +12,15 @@ const MemoizedEstateMarker = memo(
     isHovered,
     onHover,
     onUnhover,
+    onClick,
   }: {
     estate: ApiEstate;
     isHovered: boolean;
     onHover: (id: string) => void;
     onUnhover: () => void;
+    onClick: (id: string) => void;
   }) => {
     if (!estate.latLong?.latitude || !estate.latLong?.longitude) return null;
-
     return (
       <AdvancedMarker
         position={{
@@ -34,6 +35,7 @@ const MemoizedEstateMarker = memo(
           className="group relative cursor-pointer pb-2 transition-transform duration-300 hover:scale-110 active:scale-95"
           onMouseEnter={() => onHover(estate.id)}
           onMouseLeave={onUnhover}
+          onClick={() => onClick(estate.id)}
         >
           <div className="border-border/50 bg-background/10 text-foreground hover:border-primary/50 hover:bg-background/20 flex items-center justify-center rounded-full border px-2 py-0.5 text-xs font-semibold whitespace-nowrap shadow-lg backdrop-blur-md backdrop-saturate-150 transition-colors duration-300 md:px-2.5 md:py-1">
             {estate.price}
@@ -49,13 +51,15 @@ MemoizedEstateMarker.displayName = "MemoizedEstateMarker";
 
 export const EstateMap = () => {
   const API_KEY = process.env.NEXT_PUBLIC_GOOGLE_API_KEY as string;
-  const { estates, searchQuery } = useEstateStore();
+  const { estates, searchQuery, setSelectedEstateId } = useEstateStore();
   const [hoveredMarkerId, setHoveredMarkerId] = useState<string | null>(null);
 
   const filteredEstates = estates.filter((estate) => {
     const locationString = `${estate.address.city}, ${estate.address.state}`.toLowerCase();
     return locationString.includes(searchQuery.toLowerCase());
   });
+
+  const handleClick = useCallback((id: string) => setSelectedEstateId(id), [setSelectedEstateId]);
 
   //
   // useMapsLibrary loads the geocoding library, it might initially return `null`
@@ -93,6 +97,7 @@ export const EstateMap = () => {
                 isHovered={hoveredMarkerId === estate.id}
                 onHover={handleHover}
                 onUnhover={handleUnhover}
+                onClick={handleClick}
               />
             ))}
           </Map>

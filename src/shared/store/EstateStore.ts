@@ -10,6 +10,9 @@ interface EstateStore {
 
   searchQuery: string;
   setSearchQuery: (query: string) => void;
+
+  selectedEstateId: string | null;
+  setSelectedEstateId: (id: string | null) => void;
 }
 
 export const useEstateStore = create<EstateStore>((set, get) => ({
@@ -18,6 +21,9 @@ export const useEstateStore = create<EstateStore>((set, get) => ({
 
   searchQuery: "",
   setSearchQuery: (query) => set({ searchQuery: query }),
+
+  selectedEstateId: null,
+  setSelectedEstateId: (id) => set({ selectedEstateId: id }),
 
   fetchEstatesAction: async () => {
     if (get().estates.length > 0) {
