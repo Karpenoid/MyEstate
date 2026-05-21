@@ -16,28 +16,29 @@ import {
 import { ScrollArea } from "@/shared/ui/scroll-area";
 
 export const EstateInfo = () => {
-  const { selectedEstateId, setSelectedEstateId, estates } = useEstateStore();
+  const { selectedEstateId, closeModal, estates, isModalOpen } = useEstateStore();
   const estate = estates.find((e) => e.id === selectedEstateId);
 
-  const isOpen = !!selectedEstateId;
   const onOpenChange = (open: boolean) => {
-    if (!open) setSelectedEstateId(null);
+    if (!open) closeModal();
   };
 
   if (!estate) return null;
 
   return (
-    <Dialog open={isOpen} onOpenChange={onOpenChange}>
+    <Dialog open={isModalOpen} onOpenChange={onOpenChange}>
       <DialogContent className="font-inter border-border/60 bg-background/70 text-foreground overflow-hidden rounded-3xl border p-0 shadow-2xl backdrop-blur-xl backdrop-saturate-150 sm:max-w-md">
         <div className="relative h-64 w-full">
-          <Image
-            src={estate.imgSrc}
-            alt="Estate Image"
-            fill
-            sizes="(max-width: 640px) 100vw, 500px"
-            className="object-cover"
-            priority
-          />
+          {estate.imgSrc && (
+            <Image
+              src={estate.imgSrc}
+              alt="Estate Image"
+              fill
+              sizes="(max-width: 640px) 100vw, 500px"
+              className="object-cover"
+              priority
+            />
+          )}
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
 
           <div className="absolute right-4 bottom-4 left-4 text-white">

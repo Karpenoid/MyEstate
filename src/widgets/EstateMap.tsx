@@ -51,7 +51,7 @@ MemoizedEstateMarker.displayName = "MemoizedEstateMarker";
 
 export const EstateMap = () => {
   const API_KEY = process.env.NEXT_PUBLIC_GOOGLE_API_KEY as string;
-  const { estates, searchQuery, setSelectedEstateId } = useEstateStore();
+  const { estates, searchQuery, openModal } = useEstateStore();
   const [hoveredMarkerId, setHoveredMarkerId] = useState<string | null>(null);
 
   const filteredEstates = estates.filter((estate) => {
@@ -59,7 +59,7 @@ export const EstateMap = () => {
     return locationString.includes(searchQuery.toLowerCase());
   });
 
-  const handleClick = useCallback((id: string) => setSelectedEstateId(id), [setSelectedEstateId]);
+  const handleClick = useCallback((id: string) => openModal(id), [openModal]);
 
   //
   // useMapsLibrary loads the geocoding library, it might initially return `null`

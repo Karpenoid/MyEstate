@@ -40,7 +40,7 @@ const EstateBox: FC<EstateProps> = ({
     },
   ];
 
-  const { setSelectedEstateId } = useEstateStore();
+  const { openModal } = useEstateStore();
 
   return (
     <div className="group border-border/60 bg-card text-card-foreground flex w-full flex-col overflow-hidden rounded-[24px] border shadow-sm transition-all duration-300 hover:shadow-md sm:flex-row">
@@ -92,7 +92,7 @@ const EstateBox: FC<EstateProps> = ({
         <div className="border-border/50 mt-2 flex items-center justify-end border-t pt-1">
           <Button
             variant="ghost"
-            onClick={() => setSelectedEstateId(id)}
+            onClick={() => openModal(id)}
             className="font-inter text-feature-foreground hover:bg-feature/10 hover:text-feature-foreground"
           >
             More info

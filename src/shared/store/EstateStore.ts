@@ -12,7 +12,10 @@ interface EstateStore {
   setSearchQuery: (query: string) => void;
 
   selectedEstateId: string | null;
-  setSelectedEstateId: (id: string | null) => void;
+
+  isModalOpen: boolean;
+  openModal: (id: string) => void;
+  closeModal: () => void;
 }
 
 export const useEstateStore = create<EstateStore>((set, get) => ({
@@ -23,7 +26,21 @@ export const useEstateStore = create<EstateStore>((set, get) => ({
   setSearchQuery: (query) => set({ searchQuery: query }),
 
   selectedEstateId: null,
-  setSelectedEstateId: (id) => set({ selectedEstateId: id }),
+
+  isModalOpen: false,
+  openModal: (id) =>
+    set({
+      isModalOpen: true,
+      selectedEstateId: id,
+    }),
+
+  closeModal: () => {
+    set({ isModalOpen: false });
+
+    setTimeout(() => {
+      set({ selectedEstateId: null });
+    }, 400);
+  },
 
   fetchEstatesAction: async () => {
     if (get().estates.length > 0) {
