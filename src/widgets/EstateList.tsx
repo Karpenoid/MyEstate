@@ -6,7 +6,16 @@ import { useEstateStore } from "@/shared/store/EstateStore";
 import { ScrollArea } from "@/shared/ui/scroll-area";
 
 export const EstateList = () => {
-  const { estates, isLoading, fetchEstatesAction, searchQuery } = useEstateStore();
+  const {
+    estates,
+    isLoading,
+    fetchEstatesAction,
+    searchQuery,
+    minPrice,
+    maxPrice,
+    minArea,
+    maxArea,
+  } = useEstateStore();
 
   useEffect(() => {
     fetchEstatesAction();
@@ -14,11 +23,19 @@ export const EstateList = () => {
 
   const filteredEstates = estates.filter((estate) => {
     const locationString = `${estate.address.city}, ${estate.address.state}`.toLowerCase();
-    return locationString.includes(searchQuery.toLowerCase());
+    const matchesSearch = locationString.includes(searchQuery.toLowerCase());
+
+    const numericPrice = Number(estate.price.replace(/[^0-9.-]+/g, ""));
+    const matchesMinPrice = minPrice ? numericPrice >= Number(minPrice) : true;
+    const matchesMaxPrice = maxPrice ? numericPrice <= Number(maxPrice) : true;
+    const matchesMinArea = minArea ? estate.area >= Number(minArea) : true;
+    const matchesMaxArea = maxArea ? estate.area <= Number(maxArea) : true;
+
+    return matchesSearch && matchesMinPrice && matchesMaxPrice && matchesMinArea && matchesMaxArea;
   });
 
   return (
-    <ScrollArea className="border-border/50 bg-background/40 mx-auto h-[365px] w-full rounded-[24px] border shadow-sm backdrop-blur-md md:h-[525px]">
+    <ScrollArea className="border-border/50 bg-background/40 mx-auto h-[365px] w-full rounded-[24px] border shadow-sm backdrop-blur-md md:h-auto md:max-h-[525px] [&>[data-radix-scroll-area-viewport]]:max-h-[525px]">
       <div className="flex flex-col gap-4 p-2">
         {isLoading ? (
           <div className="text-muted-foreground font-inter flex h-40 items-center justify-center text-sm">

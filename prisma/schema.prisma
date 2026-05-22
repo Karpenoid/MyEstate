@@ -65,7 +65,7 @@ model VerificationToken {
 model AnalyticHistory {
   id         String   @id @default(cuid())
   userId     String?
-  estateId   String?
+  estateId   String[]
   request    String   @db.Text
   response   String   @db.Text
   createdAt  DateTime @default(now())
@@ -77,6 +77,28 @@ model Favorite {
   id        String   @id @default(cuid())
   userId    String
   estateId  String
+  imgSrc String
+  price String
+  beds Int
+  baths Int
+  area Int
+  state String
+  city String
+  street String
+
+  latitude Float
+  longitude Float
+
+  homeStatus String
+  homeType String?
+  marketingStatus String?
+  livingArea Int?
+  taxAssessedValue Int?
+  zipcode String
+  daysOnZillow Int?
+  zestimate Int?
+  detailUrl String
+
   createdAt DateTime @default(now())
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   @@unique([userId, estateId])

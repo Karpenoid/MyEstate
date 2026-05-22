@@ -11,6 +11,16 @@ interface EstateStore {
   searchQuery: string;
   setSearchQuery: (query: string) => void;
 
+  minPrice: string;
+  setMinPrice: (val: string) => void;
+  maxPrice: string;
+  setMaxPrice: (val: string) => void;
+
+  minArea: string;
+  setMinArea: (val: string) => void;
+  maxArea: string;
+  setMaxArea: (val: string) => void;
+
   selectedEstateId: string | null;
 
   isModalOpen: boolean;
@@ -24,6 +34,16 @@ export const useEstateStore = create<EstateStore>((set, get) => ({
 
   searchQuery: "",
   setSearchQuery: (query) => set({ searchQuery: query }),
+
+  minPrice: "",
+  setMinPrice: (val) => set({ minPrice: val }),
+  maxPrice: "",
+  setMaxPrice: (val) => set({ maxPrice: val }),
+
+  minArea: "",
+  setMinArea: (val) => set({ minArea: val }),
+  maxArea: "",
+  setMaxArea: (val) => set({ maxArea: val }),
 
   selectedEstateId: null,
 

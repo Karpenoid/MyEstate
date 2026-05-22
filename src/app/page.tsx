@@ -1,6 +1,7 @@
 import { EstateInfo } from "@/features/EstateInfo";
 import { EstateList } from "@/widgets/EstateList";
 import { EstateMap } from "@/widgets/EstateMap";
+import { FilterBar } from "@/widgets/FilterBar";
 import { FloatingHeader } from "@/widgets/FloatingHeader";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <div className="mx-auto w-full max-w-full px-4 md:px-6">
         <FloatingHeader />
         <main className="">
+          <FilterBar />
           <div className="mt-4 flex w-full flex-col items-start gap-4 lg:flex-row">
             <div className="w-full flex-1 lg:top-24">
               <EstateMap />

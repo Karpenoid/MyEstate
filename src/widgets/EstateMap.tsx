@@ -51,12 +51,21 @@ MemoizedEstateMarker.displayName = "MemoizedEstateMarker";
 
 export const EstateMap = () => {
   const API_KEY = process.env.NEXT_PUBLIC_GOOGLE_API_KEY as string;
-  const { estates, searchQuery, openModal } = useEstateStore();
+  const { estates, searchQuery, openModal, minPrice, maxPrice, minArea, maxArea } =
+    useEstateStore();
   const [hoveredMarkerId, setHoveredMarkerId] = useState<string | null>(null);
 
   const filteredEstates = estates.filter((estate) => {
     const locationString = `${estate.address.city}, ${estate.address.state}`.toLowerCase();
-    return locationString.includes(searchQuery.toLowerCase());
+    const matchesSearch = locationString.includes(searchQuery.toLowerCase());
+
+    const numericPrice = Number(estate.price.replace(/[^0-9.-]+/g, ""));
+    const matchesMinPrice = minPrice ? numericPrice >= Number(minPrice) : true;
+    const matchesMaxPrice = maxPrice ? numericPrice <= Number(maxPrice) : true;
+    const matchesMinArea = minArea ? estate.area >= Number(minArea) : true;
+    const matchesMaxArea = maxArea ? estate.area <= Number(maxArea) : true;
+
+    return matchesSearch && matchesMinPrice && matchesMaxPrice && matchesMinArea && matchesMaxArea;
   });
 
   const handleClick = useCallback((id: string) => openModal(id), [openModal]);
