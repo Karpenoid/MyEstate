@@ -6,7 +6,7 @@ import { FloatingHeader } from "@/widgets/FloatingHeader";
 
 export default function Home() {
   return (
-    <div className="bg-background min-h-screen py-3 transition-colors duration-500 md:py-4">
+    <div className="bg-background min-h-screen py-3 transition-colors duration-500 md:py-3">
       <div className="mx-auto w-full max-w-full px-4 md:px-6">
         <FloatingHeader />
         <main className="">
