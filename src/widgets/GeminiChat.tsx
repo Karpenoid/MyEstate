@@ -107,7 +107,7 @@ export const GeminiChat = () => {
 
                   {marketAnalysis.topPicks && marketAnalysis.topPicks.length > 0 && (
                     <div>
-                      <h4 className="text-foreground text-muted-foreground mb-2 ml-1 text-xs font-semibold tracking-wider uppercase">
+                      <h4 className="text-muted-foreground mb-2 ml-1 text-xs font-semibold tracking-wider uppercase">
                         Recommended by Gemini
                       </h4>
                       <div className="flex flex-col gap-2">
@@ -132,7 +132,7 @@ export const GeminiChat = () => {
 
                   <Button
                     onClick={handleAnalyze}
-                    className="text-muted-foreground text-feature/90 mt-2 self-center bg-transparent text-xs underline transition-colors"
+                    className="text-feature/90 mt-2 self-center bg-transparent text-xs underline transition-colors"
                   >
                     Regenerate based on current filters
                   </Button>
