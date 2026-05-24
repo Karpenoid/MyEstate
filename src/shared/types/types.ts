@@ -23,7 +23,7 @@ export interface ApiEstate {
   price: string;
   beds: number;
   baths: number;
-  area: number;
+  area: number | string;
   homeStatus: string;
   imgSrc: string;
   address: Address;
@@ -38,23 +38,3 @@ export interface ApiEstate {
   zestimate?: number;
   detailUrl?: string;
 }
-
-// export interface DetailetEstateInfo {
-//   id: string;
-//   price: string;
-//   beds: number;
-//   baths: number;
-//   area: number;
-//   homeStatus: string;
-//   imgSrc: string;
-//   address: Address;
-//   homeType: string;
-//   marketingStatus: string;
-//   livingArea: number;
-//   taxAssessedValue: number;
-//   coordinates: Coordinates;
-//   zipcode: string;
-//   daysOnZillow: number;
-//   zestimate?: number;
-//   detailUrl: string;
-// }

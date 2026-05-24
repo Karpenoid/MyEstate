@@ -91,7 +91,7 @@ export const EstateInfo = () => {
             )}
             <div className="flex flex-col">
               <span className="text-muted-foreground">Living Area:</span>
-              <span className="font-medium">{estate.livingArea} sqft</span>
+              <span className="font-medium">{estate.area || "Unknown"} sqft</span>
             </div>
             <div className="flex flex-col">
               <span className="text-muted-foreground">Marketing:</span>

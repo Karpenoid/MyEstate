@@ -28,8 +28,10 @@ export const EstateList = () => {
     const numericPrice = Number(estate.price.replace(/[^0-9.-]+/g, ""));
     const matchesMinPrice = minPrice ? numericPrice >= Number(minPrice) : true;
     const matchesMaxPrice = maxPrice ? numericPrice <= Number(maxPrice) : true;
-    const matchesMinArea = minArea ? estate.area >= Number(minArea) : true;
-    const matchesMaxArea = maxArea ? estate.area <= Number(maxArea) : true;
+
+    const numericArea = Number(estate.area) || 0;
+    const matchesMinArea = minArea ? numericArea >= Number(minArea) : true;
+    const matchesMaxArea = maxArea ? numericArea <= Number(maxArea) : true;
 
     return matchesSearch && matchesMinPrice && matchesMaxPrice && matchesMinArea && matchesMaxArea;
   });
@@ -58,7 +60,7 @@ export const EstateList = () => {
               street={estate.address.street}
               beds={estate.beds}
               baths={estate.baths}
-              area={estate.area}
+              area={estate.area || "Unknown"}
             />
           ))
         )}
