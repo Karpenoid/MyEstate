@@ -3,6 +3,7 @@ import { useState, memo, useCallback } from "react";
 
 import { AdvancedMarker, APIProvider, Map } from "@vis.gl/react-google-maps";
 
+import { useFilteredEstates } from "@/shared/hooks/hooks";
 import { useEstateStore } from "@/shared/store/EstateStore";
 import { ApiEstate } from "@/shared/types/types";
 
@@ -51,41 +52,12 @@ MemoizedEstateMarker.displayName = "MemoizedEstateMarker";
 
 export const EstateMap = () => {
   const API_KEY = process.env.NEXT_PUBLIC_GOOGLE_API_KEY as string;
-  const { estates, searchQuery, openModal, minPrice, maxPrice, minArea, maxArea } =
-    useEstateStore();
+  const { openModal } = useEstateStore();
+
+  const filteredEstates = useFilteredEstates();
+
   const [hoveredMarkerId, setHoveredMarkerId] = useState<string | null>(null);
-
-  const filteredEstates = estates.filter((estate) => {
-    const locationString = `${estate.address.city}, ${estate.address.state}`.toLowerCase();
-    const matchesSearch = locationString.includes(searchQuery.toLowerCase());
-
-    const numericPrice = Number(estate.price.replace(/[^0-9.-]+/g, ""));
-    const matchesMinPrice = minPrice ? numericPrice >= Number(minPrice) : true;
-    const matchesMaxPrice = maxPrice ? numericPrice <= Number(maxPrice) : true;
-
-    const numericArea = Number(estate.area) || 0;
-    const matchesMinArea = minArea ? numericArea >= Number(minArea) : true;
-    const matchesMaxArea = maxArea ? numericArea <= Number(maxArea) : true;
-
-    return matchesSearch && matchesMinPrice && matchesMaxPrice && matchesMinArea && matchesMaxArea;
-  });
-
   const handleClick = useCallback((id: string) => openModal(id), [openModal]);
-
-  //
-  // useMapsLibrary loads the geocoding library, it might initially return `null`
-  // if the library hasn't been loaded. Once loaded, it will return the library
-  // object as it would be returned by `await google.maps.importLibrary()`
-  // const geocodingLib = useMapsLibrary("geocoding");
-  // const geocoder = useMemo(() => geocodingLib && new geocodingLib.Geocoder(), [geocodingLib]);
-  //
-  // useEffect(() => {
-  //   if (!geocoder) return;
-  //
-  //   // now you can use `geocoder.geocode(...)` here
-  //   geocoder.geocode({ address: "Flushing, 36-11" }, (val) => console.log("geocoder:", val));
-  // }, [geocoder]);
-
   const handleHover = useCallback((id: string) => setHoveredMarkerId(id), []);
   const handleUnhover = useCallback(() => setHoveredMarkerId(null), []);
 

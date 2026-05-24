@@ -4,6 +4,7 @@ import { EstateInfo } from "@/features/EstateInfo";
 import { EstateList } from "@/widgets/EstateList";
 import { EstateMap } from "@/widgets/EstateMap";
 import { FilterBar } from "@/widgets/FilterBar";
+import { GeminiChat } from "@/widgets/GeminiChat";
 
 export const metadata: Metadata = {
   title: "Main page",
@@ -22,6 +23,7 @@ export default function Home() {
         </div>
       </div>
       <EstateInfo />
+      <GeminiChat />
     </div>
   );
 }

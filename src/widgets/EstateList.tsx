@@ -2,39 +2,18 @@
 import { useEffect } from "react";
 
 import EstateBox from "@/features/EstateBox";
+import { useFilteredEstates } from "@/shared/hooks/hooks";
 import { useEstateStore } from "@/shared/store/EstateStore";
 import { ScrollArea } from "@/shared/ui/scroll-area";
 
 export const EstateList = () => {
-  const {
-    estates,
-    isLoading,
-    fetchEstatesAction,
-    searchQuery,
-    minPrice,
-    maxPrice,
-    minArea,
-    maxArea,
-  } = useEstateStore();
+  const { isLoading, fetchEstatesAction } = useEstateStore();
+
+  const filteredEstates = useFilteredEstates();
 
   useEffect(() => {
     fetchEstatesAction();
   }, []);
-
-  const filteredEstates = estates.filter((estate) => {
-    const locationString = `${estate.address.city}, ${estate.address.state}`.toLowerCase();
-    const matchesSearch = locationString.includes(searchQuery.toLowerCase());
-
-    const numericPrice = Number(estate.price.replace(/[^0-9.-]+/g, ""));
-    const matchesMinPrice = minPrice ? numericPrice >= Number(minPrice) : true;
-    const matchesMaxPrice = maxPrice ? numericPrice <= Number(maxPrice) : true;
-
-    const numericArea = Number(estate.area) || 0;
-    const matchesMinArea = minArea ? numericArea >= Number(minArea) : true;
-    const matchesMaxArea = maxArea ? numericArea <= Number(maxArea) : true;
-
-    return matchesSearch && matchesMinPrice && matchesMaxPrice && matchesMinArea && matchesMaxArea;
-  });
 
   return (
     <ScrollArea className="border-border/50 bg-background/40 mx-auto h-[365px] w-full rounded-[24px] border shadow-sm backdrop-blur-md md:h-auto md:max-h-[525px] [&>[data-radix-scroll-area-viewport]]:max-h-[525px]">

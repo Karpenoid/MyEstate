@@ -10,6 +10,12 @@ export interface Coordinates {
   longitude: number;
 }
 
+export interface TopAnswer {
+  id: string;
+  price: string;
+  reason: string;
+}
+
 /** ------------- */
 export interface EstateProps extends Omit<ApiEstate, "address" | "imgSrc"> {
   photo: string;
@@ -37,4 +43,10 @@ export interface ApiEstate {
   daysOnZillow?: number;
   zestimate?: number;
   detailUrl?: string;
+}
+
+export interface MarketAnalysis {
+  summary: string;
+  trend: string;
+  topPicks: TopAnswer[];
 }
