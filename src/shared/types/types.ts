@@ -12,6 +12,7 @@ export interface Coordinates {
 
 export interface TopAnswer {
   id: string;
+  city: string;
   price: string;
   reason: string;
 }

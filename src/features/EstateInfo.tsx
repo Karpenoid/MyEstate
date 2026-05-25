@@ -117,7 +117,7 @@ export const EstateInfo = () => {
           <div className="mt-5 mb-2">
             <Button
               onClick={() => window.open(estate.detailUrl, "_blank", "noopener,noreferrer")}
-              className="bg-feature hover:bg-feature/90 flex w-full items-center justify-center rounded-xl p-2 text-white"
+              className="bg-feature hover:bg-feature/90 flex w-full cursor-pointer items-center justify-center rounded-xl p-2 text-white"
             >
               View full details on Zillow <ExternalLink className="ml-2 h-4 w-4" />
             </Button>

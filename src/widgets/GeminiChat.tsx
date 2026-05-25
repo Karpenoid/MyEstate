@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import { Bot, X, Sparkles, Loader2, TrendingUp, CheckCircle2 } from "lucide-react";
+import { X, Sparkles, Loader2, TrendingUp, CheckCircle2 } from "lucide-react";
 
 import { analyzeMarket } from "@/app/api/analyzeMarket";
 import { useFilteredEstates } from "@/shared/hooks/hooks";
@@ -18,6 +18,7 @@ export const GeminiChat = () => {
     useEstateStore();
 
   const filteredEstates = useFilteredEstates();
+  const { openModal } = useEstateStore();
 
   const handleAnalyze = async () => {
     if (filteredEstates.length === 0) return;
@@ -39,7 +40,7 @@ export const GeminiChat = () => {
           <div className="border-border/50 bg-muted/30 flex items-center justify-between border-b px-4 py-3">
             <div className="flex items-center gap-2">
               <div className="bg-feature text-background flex h-8 w-8 items-center justify-center rounded-full">
-                <Bot size={18} />
+                <Sparkles size={18} />
               </div>
               <div>
                 <h3 className="text-sm font-semibold">AI Analysis</h3>
@@ -48,7 +49,7 @@ export const GeminiChat = () => {
             </div>
             <Button
               onClick={() => setIsOpen(false)}
-              className="text-muted-foreground hover:bg-muted rounded-full bg-transparent p-1 transition-colors"
+              className="hover:bg-muted text-foreground/80 hover:text-foreground cursor-pointer rounded-full bg-transparent p-1 transition-colors"
             >
               <X size={18} />
             </Button>
@@ -114,10 +115,11 @@ export const GeminiChat = () => {
                         {marketAnalysis.topPicks.map((pick: TopAnswer, index: number) => (
                           <div
                             key={index}
-                            className="bg-background border-border/80 flex flex-col gap-1 rounded-xl border p-3 shadow-sm"
+                            onClick={() => openModal(pick.id)}
+                            className="bg-background border-border/80 flex cursor-pointer flex-col gap-1 rounded-xl border p-3 shadow-sm"
                           >
                             <div className="flex items-center justify-between">
-                              <span className="text-xs font-medium">ID: {pick.id}</span>
+                              <span className="text-xs font-medium">{pick.city}</span>
                               <span className="text-feature font-bold">{pick.price}</span>
                             </div>
                             <p className="text-muted-foreground flex items-start gap-1 text-[11px]">
@@ -132,7 +134,7 @@ export const GeminiChat = () => {
 
                   <Button
                     onClick={handleAnalyze}
-                    className="text-feature/90 mt-2 self-center bg-transparent text-xs underline transition-colors"
+                    className="text-feature mt-2 cursor-pointer self-center bg-transparent text-xs underline transition-colors"
                   >
                     Regenerate based on current filters
                   </Button>
@@ -151,7 +153,7 @@ export const GeminiChat = () => {
             : "bg-feature/90 hover:bg-feature-foreground"
         }`}
       >
-        {isOpen ? <X size={24} /> : <Bot size={28} />}
+        {isOpen ? <X size={24} /> : <Sparkles size={28} />}
       </Button>
     </div>
   );

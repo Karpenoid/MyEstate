@@ -93,7 +93,7 @@ const EstateBox: FC<EstateProps> = ({
           <Button
             variant="ghost"
             onClick={() => openModal(id)}
-            className="font-inter text-feature-foreground hover:bg-feature/10 hover:text-feature-foreground"
+            className="font-inter text-feature-foreground hover:bg-feature/10 hover:text-feature-foreground cursor-pointer"
           >
             More info
           </Button>

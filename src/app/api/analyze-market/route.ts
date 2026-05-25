@@ -40,6 +40,7 @@ export async function POST(request: Request) {
         "topPicks": [
           {
             "id": "Property ID here",
+            "city": "Property city here",
             "price": "Price here",
             "reason": "Advantages of this variant and why is this a good choice"
           }
@@ -49,7 +50,7 @@ export async function POST(request: Request) {
     `;
 
     const response = await ai.models.generateContent({
-      model: "gemini-2.5-flash",
+      model: "gemini-3.5-flash",
       contents: prompt,
       config: {
         responseMimeType: "application/json",
