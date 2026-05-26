@@ -36,7 +36,7 @@ export const GeminiChat = () => {
   return (
     <div className="font-inter fixed right-6 bottom-6 z-50 flex flex-col items-end gap-4">
       {isOpen && (
-        <div className="border-border/60 bg-background/20 animate-in slide-in-from-bottom-5 flex h-[500px] w-[350px] flex-col overflow-hidden rounded-2xl border shadow-2xl backdrop-blur-xl backdrop-saturate-150 sm:w-[400px]">
+        <div className="border-border/60 bg-background/20 animate-in slide-in-from-bottom-5 flex h-[calc(100vh-64px)] w-[350px] flex-col overflow-hidden rounded-2xl border shadow-2xl backdrop-blur-xl backdrop-saturate-150 sm:h-[500px] sm:w-[400px]">
           <div className="border-border/50 bg-muted/30 flex items-center justify-between border-b px-4 py-3">
             <div className="flex items-center gap-2">
               <div className="bg-feature text-background flex h-8 w-8 items-center justify-center rounded-full">
@@ -49,13 +49,13 @@ export const GeminiChat = () => {
             </div>
             <Button
               onClick={() => setIsOpen(false)}
-              className="hover:bg-muted text-foreground/80 hover:text-foreground cursor-pointer rounded-full bg-transparent p-1 transition-colors"
+              className="hover:bg-muted text-foreground/80 hover:text-foreground rounded-full bg-transparent p-1 transition-colors"
             >
               <X size={18} />
             </Button>
           </div>
 
-          <ScrollArea className="h-[440px] w-full">
+          <ScrollArea className="h-[calc(100vh-64px-60px)] w-full sm:h-[440px]">
             <div className="p-4">
               {!marketAnalysis && !isAnalyzing && (
                 <div className="flex flex-col items-center justify-center gap-3 pt-12 text-center">
@@ -134,7 +134,7 @@ export const GeminiChat = () => {
 
                   <Button
                     onClick={handleAnalyze}
-                    className="text-feature mt-2 cursor-pointer self-center bg-transparent text-xs underline transition-colors"
+                    className="text-feature mt-2 self-center bg-transparent text-xs underline transition-colors"
                   >
                     Regenerate based on current filters
                   </Button>
@@ -149,7 +149,7 @@ export const GeminiChat = () => {
         onClick={() => setIsOpen(!isOpen)}
         className={`text-background flex h-12 w-12 items-center justify-center rounded-full shadow-lg backdrop-blur-md transition-all hover:scale-105 active:scale-95 ${
           isOpen
-            ? "bg-foreground/90 hover:bg-foreground"
+            ? "bg-foreground/90 hover:bg-foreground hidden sm:flex"
             : "bg-feature/90 hover:bg-feature-foreground"
         }`}
       >
