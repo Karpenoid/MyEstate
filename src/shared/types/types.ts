@@ -51,3 +51,11 @@ export interface MarketAnalysis {
   trend: string;
   topPicks: TopAnswer[];
 }
+
+export interface SoloEstateAnalysis {
+  summary: string;
+  exterior: string;
+  advantages: string;
+  disadvantages: string;
+  conclusion: string;
+}

@@ -43,7 +43,7 @@ export const GeminiChat = () => {
                 <Sparkles size={18} />
               </div>
               <div>
-                <h3 className="text-sm font-semibold">AI Analysis</h3>
+                <h3 className="text-sm font-semibold">Gemini Review</h3>
                 <p className="text-muted-foreground text-xs">Powered by Gemini</p>
               </div>
             </div>

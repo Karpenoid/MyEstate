@@ -27,6 +27,10 @@ interface EstateStore {
   openModal: (id: string) => void;
   closeModal: () => void;
 
+  isAiModalOpen: boolean;
+  aiWindow: () => void;
+  closeAIWindow: () => void;
+
   marketAnalysis: MarketAnalysis | null;
   isAnalyzing: boolean;
   setMarketAnalysis: (data: MarketAnalysis) => void;
@@ -61,11 +65,14 @@ export const useEstateStore = create<EstateStore>((set, get) => ({
 
   closeModal: () => {
     set({ isModalOpen: false });
-
     setTimeout(() => {
       set({ selectedEstateId: null });
     }, 400);
   },
+
+  isAiModalOpen: false,
+  aiWindow: () => set({ isAiModalOpen: true }),
+  closeAIWindow: () => set({ isAiModalOpen: false }),
 
   marketAnalysis: null,
   isAnalyzing: false,
