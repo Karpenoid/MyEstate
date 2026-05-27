@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 
+import { ResponseBox } from "@/features/ResponseBox";
+
 export const metadata: Metadata = {
   title: "AI Response Page",
   description: "AI Response Page",
@@ -7,8 +9,8 @@ export const metadata: Metadata = {
 
 export default function AIresponsePage() {
   return (
-    <div className="w-full">
-      <p>Your AI reponses history</p>
+    <div className="mt-2 w-full">
+      <ResponseBox />
     </div>
   );
 }
