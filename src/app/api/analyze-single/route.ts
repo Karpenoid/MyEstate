@@ -21,7 +21,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const { imgSrc, detailUrl, latLong, daysOnZillow, ...estateData } = estate;
+    const { imgSrc, detailUrl, latLong, ...estateData } = estate;
 
     const promptText = `
       Analyze in details this specific property in detail.

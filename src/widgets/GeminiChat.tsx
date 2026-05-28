@@ -36,7 +36,7 @@ export const GeminiChat = () => {
   return (
     <div className="font-inter fixed right-6 bottom-6 z-50 flex flex-col items-end gap-4">
       {isOpen && (
-        <div className="border-border/60 bg-background/20 animate-in slide-in-from-bottom-5 flex h-[calc(100vh-94px)] w-[350px] flex-col overflow-hidden rounded-2xl border shadow-2xl backdrop-blur-xl backdrop-saturate-150 sm:h-[500px] sm:w-[400px]">
+        <div className="border-border/60 bg-background/20 animate-in slide-in-from-bottom-5 flex h-[calc(100dvh-64px)] w-[350px] flex-col overflow-hidden rounded-2xl border shadow-2xl backdrop-blur-xl backdrop-saturate-150 sm:h-[500px] sm:w-[400px]">
           <div className="border-border/50 bg-muted/30 flex items-center justify-between border-b px-4 py-3">
             <div className="flex items-center gap-2">
               <div className="bg-feature text-background flex h-8 w-8 items-center justify-center rounded-full">
@@ -55,7 +55,7 @@ export const GeminiChat = () => {
             </Button>
           </div>
 
-          <ScrollArea className="h-[calc(100vh-64px-90px)] w-full sm:h-[440px]">
+          <ScrollArea className="h-[calc(100dvh-64px-60px)] w-full sm:h-[440px]">
             <div className="p-4">
               {!marketAnalysis && !isAnalyzing && (
                 <div className="flex flex-col items-center justify-center gap-3 pt-12 text-center">
