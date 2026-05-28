@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 import { fetchEstates } from "@/app/api/getEstates";
-import { ApiEstate, MarketAnalysis } from "@/shared/types/types";
+import { ApiEstate, MarketAnalysis, NYInfoType } from "@/shared/types/types";
 
 interface EstateStore {
   estates: ApiEstate[];
@@ -35,6 +35,9 @@ interface EstateStore {
   isAnalyzing: boolean;
   setMarketAnalysis: (data: MarketAnalysis) => void;
   setIsAnalyzing: (val: boolean) => void;
+
+  nyAnalysis: NYInfoType | null;
+  setNyAnalysis: (data: NYInfoType | null) => void;
 }
 
 export const useEstateStore = create<EstateStore>((set, get) => ({
@@ -78,6 +81,9 @@ export const useEstateStore = create<EstateStore>((set, get) => ({
   isAnalyzing: false,
   setMarketAnalysis: (data) => set({ marketAnalysis: data }),
   setIsAnalyzing: (val) => set({ isAnalyzing: val }),
+
+  nyAnalysis: null,
+  setNyAnalysis: (data) => set({ nyAnalysis: data }),
 
   fetchEstatesAction: async () => {
     if (get().estates.length > 0) {

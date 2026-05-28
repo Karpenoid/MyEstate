@@ -59,3 +59,8 @@ export interface SoloEstateAnalysis {
   disadvantages: string;
   conclusion: string;
 }
+
+export interface NYInfoType extends Pick<SoloEstateAnalysis, "summary" | "conclusion"> {
+  trend: string;
+  tendencies: string;
+}

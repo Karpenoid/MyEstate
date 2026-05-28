@@ -6,7 +6,11 @@ import { GoogleLogin } from "@/features/GoogleLogin";
 
 export const FloatingHeader = () => {
   const pathname = usePathname();
-  const isHistoryActive = pathname === "/ai-response-page";
+
+  const options = [
+    { href: "/ny-info-page", label: "NY Info" },
+    { href: "/response-history-page", label: "Response History" },
+  ];
 
   return (
     <header className="sticky top-0 z-50 mb-2 w-full bg-transparent">
@@ -20,15 +24,21 @@ export const FloatingHeader = () => {
           </Link>
         </h1>
 
-        <div className="order-3 flex w-full justify-center md:order-2 md:block md:w-auto">
-          <Link
-            className={`font-inter text-sm font-semibold transition-colors duration-200 ${
-              isHistoryActive ? "text-feature" : "text-foreground/60 hover:text-foreground/75"
-            }`}
-            href="/ai-response-page"
-          >
-            Response History
-          </Link>
+        <div className="order-3 flex w-full justify-center gap-6 md:order-2 md:w-auto">
+          {options.map(({ href, label }) => {
+            const isActive = pathname === href;
+            return (
+              <Link
+                key={href}
+                href={href}
+                className={`font-inter text-sm font-semibold transition-colors duration-200 ${
+                  isActive ? "text-feature" : "text-foreground/60 hover:text-foreground/75"
+                }`}
+              >
+                {label}
+              </Link>
+            );
+          })}
         </div>
         <div className="order-2 shrink-0 md:order-3">
           <GoogleLogin />
