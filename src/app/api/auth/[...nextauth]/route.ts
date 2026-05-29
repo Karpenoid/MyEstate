@@ -4,12 +4,14 @@ import GoogleProvider from "next-auth/providers/google";
 
 import { prisma } from "@/shared/lib/prisma";
 
-const authOptions: AuthOptions = {
-  // Configure one or more authentication providers
+export const authOptions: AuthOptions = {
   session: {
     strategy: "jwt",
   },
   adapter: PrismaAdapter(prisma),
+  pages: {
+    error: "/",
+  },
   providers: [
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID as string,
