@@ -1,62 +1,19 @@
 "use client";
-import { useState, memo, useCallback } from "react";
+import { useState, useCallback } from "react";
 
-import { AdvancedMarker, APIProvider, Map } from "@vis.gl/react-google-maps";
+import { APIProvider, Map } from "@vis.gl/react-google-maps";
 
+import { ClusteredMarker } from "@/features/ClusteredMarker";
 import { useFilteredEstates } from "@/shared/hooks/hooks";
 import { useEstateStore } from "@/shared/store/EstateStore";
-import { ApiEstate } from "@/shared/types/types";
-
-const MemoizedEstateMarker = memo(
-  ({
-    estate,
-    isHovered,
-    onHover,
-    onUnhover,
-    onClick,
-  }: {
-    estate: ApiEstate;
-    isHovered: boolean;
-    onHover: (id: string) => void;
-    onUnhover: () => void;
-    onClick: (id: string) => void;
-  }) => {
-    if (!estate.latLong?.latitude || !estate.latLong?.longitude) return null;
-    return (
-      <AdvancedMarker
-        position={{
-          lat: estate.latLong.latitude,
-          lng: estate.latLong.longitude,
-        }}
-        title={estate.price}
-        collisionBehavior="REQUIRED_AND_HIDES_OPTIONAL"
-        zIndex={isHovered ? 50 : 1}
-      >
-        <div
-          className="group relative cursor-pointer pb-2 transition-transform duration-300 hover:scale-110 active:scale-95"
-          onMouseEnter={() => onHover(estate.id)}
-          onMouseLeave={onUnhover}
-          onClick={() => onClick(estate.id)}
-        >
-          <div className="border-border/50 bg-background/10 text-foreground hover:border-primary/50 hover:bg-background/20 flex items-center justify-center rounded-full border px-2 py-0.5 text-xs font-semibold whitespace-nowrap shadow-lg backdrop-blur-md backdrop-saturate-150 transition-colors duration-300 md:px-2.5 md:py-1">
-            {estate.price}
-          </div>
-          <div className="border-border/50 bg-feature hover:border-primary/50 absolute bottom-1 left-1/2 h-3 w-3 -translate-x-1/2 rotate-45 rounded-sm border-r border-b shadow-inner backdrop-blur-sm backdrop-saturate-150 transition-colors duration-300"></div>
-        </div>
-      </AdvancedMarker>
-    );
-  },
-);
-
-MemoizedEstateMarker.displayName = "MemoizedEstateMarker";
 
 export const EstateMap = () => {
   const API_KEY = process.env.NEXT_PUBLIC_GOOGLE_API_KEY as string;
   const { openModal } = useEstateStore();
-
   const filteredEstates = useFilteredEstates();
 
   const [hoveredMarkerId, setHoveredMarkerId] = useState<string | null>(null);
+
   const handleClick = useCallback((id: string) => openModal(id), [openModal]);
   const handleHover = useCallback((id: string) => setHoveredMarkerId(id), []);
   const handleUnhover = useCallback(() => setHoveredMarkerId(null), []);
@@ -73,16 +30,14 @@ export const EstateMap = () => {
             mapId="DEMO_MAP_ID"
             style={{ width: "100%", height: "100%" }}
           >
-            {filteredEstates.map((estate) => (
-              <MemoizedEstateMarker
-                key={estate.id}
-                estate={estate}
-                isHovered={hoveredMarkerId === estate.id}
-                onHover={handleHover}
-                onUnhover={handleUnhover}
-                onClick={handleClick}
-              />
-            ))}
+            <ClusteredMarker
+              estates={filteredEstates}
+              hoveredMarkerId={hoveredMarkerId}
+              onHover={handleHover}
+              onUnhover={handleUnhover}
+              onClick={handleClick}
+              clusterClassName="h-8 w-8 text-foreground border-border/50 bg-background/5 hover:border-primary/50 hover:bg-background/10 flex items-center justify-center rounded-full border px-2 py-0.5 text-sm font-semibold whitespace-nowrap shadow-lg backdrop-blur-lg backdrop-saturate-150 transition-colors duration-300 md:px-2.5 md:py-1"
+            />
           </Map>
         </APIProvider>
         <div className="pointer-events-none absolute inset-0 rounded-[24px] border border-white/20 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.1)] md:rounded-[32px]"></div>
