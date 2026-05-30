@@ -46,6 +46,14 @@ export async function POST(request: Request) {
         Please also offer advice (4-5 sentences) on which type of property would be a sound investment, as well as which areas of the city.",
         
         "conclusion": "Please provide a detailed analysis (8-10 sentences) of the current state of the property market, its short-term and long-term trends, and what to expect in the future.",
+
+        "sources": [
+          {
+            "summeryS": ["Array of URL strings for the sources used for the summary. Example: 'https://link1.com', 'https://link2.com'"],
+            "trendS": ["Array of URL strings for the sources used for the trends. Example: 'https://link1.com', 'https://link2.com'"],
+            "tendenciesS": ["Array of URL strings for the sources used for the tendencies. Example: 'https://link1.com', 'https://link2.com'"]
+          }
+        ]
       }
     `;
 

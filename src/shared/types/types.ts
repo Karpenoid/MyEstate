@@ -17,6 +17,12 @@ export interface TopAnswer {
   reason: string;
 }
 
+export interface NYInfoSources {
+  summeryS: string[];
+  trendS: string[];
+  tendenciesS: string[];
+}
+
 /** ------------- */
 export interface EstateProps extends Omit<ApiEstate, "address" | "imgSrc"> {
   photo: string;
@@ -63,4 +69,5 @@ export interface SoloEstateAnalysis {
 export interface NYInfoType extends Pick<SoloEstateAnalysis, "summary" | "conclusion"> {
   trend: string;
   tendencies: string;
+  sources: NYInfoSources[];
 }

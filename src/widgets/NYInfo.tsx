@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 
-import { Sparkles, Info, ChartSpline, ArrowUpRight, Loader2 } from "lucide-react";
+import { Sparkles, Info, ChartSpline, ArrowUpRight, Loader2, BookText } from "lucide-react";
 
 import { analyzeNY } from "@/app/api/analyzeNY";
 import { useEstateStore } from "@/shared/store/EstateStore";
@@ -108,6 +108,70 @@ export const NYInfo = () => {
                 {nyAnalysis.conclusion}
               </p>
             </div>
+
+            {nyAnalysis.sources && nyAnalysis.sources.length > 0 && (
+              <div className="bg-feature/3 border-feature/20 mt-1 w-full overflow-hidden rounded-2xl border p-3 sm:p-4">
+                <h4 className="text-feature mb-2 flex items-center gap-1.5 text-xs font-bold tracking-wider uppercase">
+                  <BookText size={14} /> Sources:
+                </h4>
+                <div className="flex flex-col gap-2">
+                  <p className="text-foreground text-sm leading-relaxed font-medium break-words">
+                    <span className="text-muted-foreground mr-1 font-semibold">Summary:</span>
+                    {nyAnalysis.sources
+                      .flatMap((s) => s.summeryS)
+                      .map((link, idx, arr) => (
+                        <span key={`sum-${idx}`}>
+                          <a
+                            href={link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="cursor-pointer text-blue-500 underline decoration-blue-500/30 underline-offset-2 transition-colors hover:text-blue-600 hover:decoration-blue-500"
+                          >
+                            {link}
+                          </a>
+                          {idx < arr.length - 1 && ", "}
+                        </span>
+                      ))}
+                  </p>
+                  <p className="text-foreground text-sm leading-relaxed font-medium break-words">
+                    <span className="text-muted-foreground mr-1 font-semibold">Trends:</span>
+                    {nyAnalysis.sources
+                      .flatMap((s) => s.trendS)
+                      .map((link, idx, arr) => (
+                        <span key={`trend-${idx}`}>
+                          <a
+                            href={link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="cursor-pointer text-blue-500 underline decoration-blue-500/30 underline-offset-2 transition-colors hover:text-blue-600 hover:decoration-blue-500"
+                          >
+                            {link}
+                          </a>
+                          {idx < arr.length - 1 && ", "}
+                        </span>
+                      ))}
+                  </p>
+                  <p className="text-foreground text-sm leading-relaxed font-medium break-words">
+                    <span className="text-muted-foreground mr-1 font-semibold">Tendencies:</span>
+                    {nyAnalysis.sources
+                      .flatMap((s) => s.tendenciesS)
+                      .map((link, idx, arr) => (
+                        <span key={`tend-${idx}`}>
+                          <a
+                            href={link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="cursor-pointer text-blue-500 underline decoration-blue-500/30 underline-offset-2 transition-colors hover:text-blue-600 hover:decoration-blue-500"
+                          >
+                            {link}
+                          </a>
+                          {idx < arr.length - 1 && ", "}
+                        </span>
+                      ))}
+                  </p>
+                </div>
+              </div>
+            )}
 
             <Button
               onClick={handleAnalyze}
