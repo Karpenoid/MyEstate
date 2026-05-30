@@ -11,12 +11,12 @@ export const metadata: Metadata = {
   description: "AI Response history page",
 };
 
-export default async function ResponseHistoryPage() {
-  const session = await getServerSession(authOptions);
+export default function ResponseHistoryPage() {
+  // const session = await getServerSession(authOptions);
 
-  if (!session) {
-    redirect("/api/auth/signin/google?callbackUrl=/response-history-page");
-  }
+  // if (!session) {
+  //   redirect("/api/auth/signin/google?callbackUrl=/response-history-page");
+  // }
 
   return (
     <div className="mt-2 w-full">
