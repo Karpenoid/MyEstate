@@ -20,7 +20,7 @@ export default function ResponseHistoryPage() {
 
   return (
     <div className="mt-2 w-full">
-      <NYInfo />
+      <h1 className="font-semibold">This is an empty page, what do u wanne see here?)</h1>
     </div>
   );
 }

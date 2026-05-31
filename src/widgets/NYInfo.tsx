@@ -125,7 +125,7 @@ export const NYInfo = () => {
                             href={link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="cursor-pointer text-blue-500 underline decoration-blue-500/30 underline-offset-2 transition-colors hover:text-blue-600 hover:decoration-blue-500"
+                            className="text-feature/94 decoration-feature/50 hover:text-feature hover:decoration-feature cursor-pointer underline underline-offset-2 transition-colors"
                           >
                             {link}
                           </a>
@@ -143,7 +143,7 @@ export const NYInfo = () => {
                             href={link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="cursor-pointer text-blue-500 underline decoration-blue-500/30 underline-offset-2 transition-colors hover:text-blue-600 hover:decoration-blue-500"
+                            className="text-feature/94 decoration-feature/50 hover:text-feature hover:decoration-feature cursor-pointer underline underline-offset-2 transition-colors"
                           >
                             {link}
                           </a>
@@ -161,7 +161,7 @@ export const NYInfo = () => {
                             href={link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="cursor-pointer text-blue-500 underline decoration-blue-500/30 underline-offset-2 transition-colors hover:text-blue-600 hover:decoration-blue-500"
+                            className="text-feature/94 decoration-feature/50 hover:text-feature hover:decoration-feature cursor-pointer underline underline-offset-2 transition-colors"
                           >
                             {link}
                           </a>
@@ -175,7 +175,7 @@ export const NYInfo = () => {
 
             <Button
               onClick={handleAnalyze}
-              className="text-feature my-2 self-center bg-transparent text-xs underline transition-colors hover:bg-transparent hover:opacity-80"
+              className="text-feature/94 hover:text-feature my-2 self-center bg-transparent text-xs underline transition-colors hover:bg-transparent"
             >
               Regenerate Analysis
             </Button>
