@@ -41,7 +41,7 @@ export const NYInfo = () => {
         </div>
       </div>
 
-      <ScrollArea className="h-full max-h-[calc(100dvh-230px)] w-full flex-1 pr-2 sm:max-h-[calc(100dvh-200px)] sm:pr-4">
+      <ScrollArea className="h-full max-h-[calc(100dvh-230px)] w-full flex-1 sm:max-h-[calc(100dvh-200px)]">
         {!nyAnalysis && !isAnalyzing && (
           <div className="flex h-full flex-col items-center justify-center gap-3 pt-20 text-center">
             <div className="bg-background/40 text-feature rounded-full">
@@ -70,7 +70,7 @@ export const NYInfo = () => {
         )}
 
         {nyAnalysis && !isAnalyzing && (
-          <div className="flex flex-col gap-4 pb-4">
+          <div className="flex flex-col gap-4 pr-3 pb-4 sm:pr-4">
             <div className="bg-muted/40 border-border/50 w-full overflow-hidden rounded-2xl border p-3 sm:p-4">
               <h4 className="text-muted-foreground mb-2 flex items-center gap-1.5 text-xs font-bold tracking-wider uppercase">
                 <Info size={14} className="text-blue-500" /> Summary
