@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 
+import { ErrorBoundary } from "@/features/ErrorBoundery";
 import { NYInfo } from "@/widgets/NYInfo";
 
 export const metadata: Metadata = {
@@ -10,7 +11,9 @@ export const metadata: Metadata = {
 export default function NYInfoPage() {
   return (
     <div className="mt-2 w-full">
-      <NYInfo />
+      <ErrorBoundary>
+        <NYInfo />
+      </ErrorBoundary>
     </div>
   );
 }

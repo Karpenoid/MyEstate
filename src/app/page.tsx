@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 
+import { ErrorBoundary } from "@/features/ErrorBoundery";
 import { EstateInfo } from "@/features/EstateInfo";
 import { EstateList } from "@/widgets/EstateList";
 import { EstateMap } from "@/widgets/EstateMap";
@@ -16,14 +17,20 @@ export default function Home() {
       <FilterBar />
       <div className="mt-4 flex w-full flex-col items-start gap-4 lg:flex-row">
         <div className="w-full flex-1 lg:top-24">
-          <EstateMap />
+          <ErrorBoundary>
+            <EstateMap />
+          </ErrorBoundary>
         </div>
         <div className="w-full shrink-0 lg:w-105 xl:w-[610px]">
-          <EstateList />
+          <ErrorBoundary>
+            <EstateList />
+          </ErrorBoundary>
         </div>
       </div>
-      <EstateInfo />
-      <GeminiChat />
+      <ErrorBoundary>
+        <EstateInfo />
+        <GeminiChat />
+      </ErrorBoundary>
     </div>
   );
 }
