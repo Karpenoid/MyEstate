@@ -23,6 +23,12 @@ export async function fetchEstates() {
     }
 
     const data = await response.json();
+
+    if (!data || !data.results || data.results.length === 0) {
+      console.warn("Api returned 200 OK, but 'results' are empty. Using local mock json file.");
+      return mockData;
+    }
+
     return data;
   } catch (error) {
     console.error("Api error, using local mock json file.", error);
