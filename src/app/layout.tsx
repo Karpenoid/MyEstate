@@ -1,11 +1,12 @@
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 
 import Providers from "@/app/api/auth/providers/providers";
+import { FloatingHeader } from "@/widgets/FloatingHeader";
+import { GemChat } from "@/widgets/GemChat";
 
 import type { Metadata } from "next";
 
 import "./globals.css";
-import { FloatingHeader } from "@/widgets/FloatingHeader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,7 +42,9 @@ export default function RootLayout({
         <Providers>
           <div className="mx-auto flex min-h-screen w-full max-w-full flex-col px-4 py-3 md:px-6 md:py-4">
             <FloatingHeader />
-            <main className="w-full flex-1">{children}</main>
+            <main className="w-full flex-1">
+              {children} <GemChat />
+            </main>
           </div>
         </Providers>
       </body>

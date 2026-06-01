@@ -31,6 +31,10 @@ interface EstateStore {
   aiWindow: () => void;
   closeAIWindow: () => void;
 
+  isGemChatOpen: boolean;
+  gemWindow: () => void;
+  closeGemChat: () => void;
+
   marketAnalysis: MarketAnalysis | null;
   isAnalyzing: boolean;
   setMarketAnalysis: (data: MarketAnalysis) => void;
@@ -76,6 +80,10 @@ export const useEstateStore = create<EstateStore>((set, get) => ({
   isAiModalOpen: false,
   aiWindow: () => set({ isAiModalOpen: true }),
   closeAIWindow: () => set({ isAiModalOpen: false }),
+
+  isGemChatOpen: false,
+  gemWindow: () => set({ isGemChatOpen: true }),
+  closeGemChat: () => set({ isGemChatOpen: false }),
 
   marketAnalysis: null,
   isAnalyzing: false,

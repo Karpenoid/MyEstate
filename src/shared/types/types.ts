@@ -71,3 +71,7 @@ export interface NYInfoType extends Pick<SoloEstateAnalysis, "summary" | "conclu
   tendencies: string;
   sources: NYInfoSources[];
 }
+
+export interface GemType extends Pick<NYInfoType, "summary" | "conclusion" | "sources"> {
+  topPicks?: TopAnswer[];
+}

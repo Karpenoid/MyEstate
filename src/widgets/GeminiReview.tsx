@@ -11,7 +11,7 @@ import { TopAnswer } from "@/shared/types/types";
 import { Button } from "@/shared/ui/button";
 import { ScrollArea } from "@/shared/ui/scroll-area";
 
-export const GeminiChat = () => {
+export const GeminiReview = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const { estates, isAnalyzing, marketAnalysis, setIsAnalyzing, setMarketAnalysis } =

@@ -45,7 +45,7 @@ export async function POST(request: Request) {
         "tendencies": "Based on reliable information, its analysis, and an analysis of trends, please provide a detailed and comprehensive description of market trends (both short-term and long-term). 
         Please also offer advice (4-5 sentences) on which type of property would be a sound investment, as well as which areas of the city.",
         
-        "conclusion": "Please provide a detailed analysis (8-10 sentences) of the current state of the property market, its short-term and long-term trends, and what to expect in the future.",
+        "conclusion": "Please provide a conclusion (3-5 sentences) of the current state of the property market.",
 
         "sources": [
           {
@@ -58,7 +58,7 @@ export async function POST(request: Request) {
     `;
 
     const response = await ai.models.generateContent({
-      model: "gemini-3.5-flash",
+      model: "gemini-3-flash-preview",
       contents: prompt,
       config: {
         responseMimeType: "application/json",
