@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 
 import { Send, Sparkles, CheckCircle2, BookText } from "lucide-react";
+import { useShallow } from "zustand/react/shallow";
 
 import { analyzeGemchat } from "@/app/api/analyzeGemchat";
 import { useEstateStore } from "@/shared/store/EstateStore";
@@ -19,10 +20,14 @@ import { Input } from "@/shared/ui/input";
 import { ScrollArea } from "@/shared/ui/scroll-area";
 
 export const GemChat = () => {
-  const isGemChatOpen = useEstateStore((state) => state.isGemChatOpen);
-  const closeGemChat = useEstateStore((state) => state.closeGemChat);
-  const estates = useEstateStore((state) => state.estates);
-  const openModal = useEstateStore((state) => state.openModal);
+  const { isGemChatOpen, closeGemChat, estates, openModal } = useEstateStore(
+    useShallow((state) => ({
+      isGemChatOpen: state.isGemChatOpen,
+      closeGemChat: state.closeGemChat,
+      estates: state.estates,
+      openModal: state.openModal,
+    })),
+  );
 
   const [inputValue, setInputValue] = useState("");
   const [isTyping, setIsTyping] = useState(false);
@@ -40,7 +45,7 @@ export const GemChat = () => {
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages, isTyping]);
+  }, [messages]);
 
   const handleSendMessage = async (e: React.FormEvent) => {
     e.preventDefault();
