@@ -15,7 +15,7 @@ export const FloatingHeader = () => {
 
   const options = [
     { href: "/ny-info-page", label: "NY Info" },
-    { href: "/response-history-page", label: "Response History" },
+    { href: "/avg-district-page", label: "District Prices" },
   ];
 
   return (
