@@ -75,8 +75,6 @@ export async function POST(request: Request) {
         "sources": [
           {
             "summeryS": ["Array of URL strings for the sources used for the summary. Example: 'https://link1.com', 'https://link2.com'"],
-            "trendS": ["Array of URL strings for the sources used for the trends. Example: 'https://link1.com', 'https://link2.com'"],
-            "tendenciesS": ["Array of URL strings for the sources used for the tendencies. Example: 'https://link1.com', 'https://link2.com'"]
           }
         ],
         "topPicks": [

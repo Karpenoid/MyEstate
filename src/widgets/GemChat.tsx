@@ -170,51 +170,6 @@ export const GemChat = () => {
                             ))}
                         </p>
                       )}
-                      {msg.sources.flatMap((s) => s.trendS || []).filter(Boolean).length > 0 && (
-                        <p className="text-foreground text-[11px] leading-relaxed break-words">
-                          <span className="text-muted-foreground mr-1 font-semibold">Trends:</span>
-                          {msg.sources
-                            .flatMap((s) => s.trendS || [])
-                            .filter(Boolean)
-                            .map((link, i, arr) => (
-                              <span key={`trend-${i}`}>
-                                <a
-                                  href={link}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="text-feature/94 decoration-feature/50 hover:text-feature hover:decoration-feature cursor-pointer underline underline-offset-2 transition-colors"
-                                >
-                                  {link}
-                                </a>
-                                {i < arr.length - 1 && ", "}
-                              </span>
-                            ))}
-                        </p>
-                      )}
-                      {msg.sources.flatMap((s) => s.tendenciesS || []).filter(Boolean).length >
-                        0 && (
-                        <p className="text-foreground text-[11px] leading-relaxed break-words">
-                          <span className="text-muted-foreground mr-1 font-semibold">
-                            Tendencies:
-                          </span>
-                          {msg.sources
-                            .flatMap((s) => s.tendenciesS || [])
-                            .filter(Boolean)
-                            .map((link, i, arr) => (
-                              <span key={`tend-${i}`}>
-                                <a
-                                  href={link}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="text-feature/94 decoration-feature/50 hover:text-feature hover:decoration-feature cursor-pointer underline underline-offset-2 transition-colors"
-                                >
-                                  {link}
-                                </a>
-                                {i < arr.length - 1 && ", "}
-                              </span>
-                            ))}
-                        </p>
-                      )}
                     </div>
                   </div>
                 )}
