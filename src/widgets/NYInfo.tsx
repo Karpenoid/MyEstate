@@ -13,7 +13,7 @@ export const NYInfo = () => {
   const [isAnalyzing, setIsAnalyzing] = useState(false);
 
   useEffect(() => {
-    fetchEstatesAction();
+    fetchEstatesAction({ page: 1 });
   }, []);
 
   const handleAnalyze = async () => {

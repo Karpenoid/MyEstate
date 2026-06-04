@@ -6,7 +6,7 @@ import { ApiEstate, MarketAnalysis, NYInfoType } from "@/shared/types/types";
 interface EstateStore {
   estates: ApiEstate[];
   isLoading: boolean;
-  fetchEstatesAction: () => Promise<void>;
+  fetchEstatesAction: ({ page }: { page: number }) => Promise<void>;
 
   searchQuery: string;
   setSearchQuery: (query: string) => void;
@@ -93,17 +93,19 @@ export const useEstateStore = create<EstateStore>((set, get) => ({
   nyAnalysis: null,
   setNyAnalysis: (data) => set({ nyAnalysis: data }),
 
-  fetchEstatesAction: async () => {
-    if (get().estates.length > 0) {
-      set({ isLoading: false });
-      return;
-    }
+  fetchEstatesAction: async ({ page }) => {
+    // if (get().estates.length > 0) {
+    //   console.log("Not fetchin estates");
+    //   set({ isLoading: false });
+    //   return;
+    // }
 
     set({ isLoading: true });
     try {
-      const data = await fetchEstates();
+      console.log("Fetching estates");
+      const data = await fetchEstates({ page });
       const results = Array.isArray(data) ? data : data?.results || [];
-      set({ estates: results });
+      set({ estates: [...get().estates, ...results] });
     } catch (error) {
       console.error("Failed to load data in store:", error);
     } finally {
